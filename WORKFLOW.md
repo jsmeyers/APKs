@@ -1,8 +1,6 @@
 # APK Analysis Workflow - APks Project
 
-## Setup
-
-### Required Tools
+## Required Tools
 
 ```bash
 # Java (jadx requirement)
@@ -10,13 +8,19 @@ apt-get install -y default-jdk
 
 # jadx (source decompiler)
 cd /tmp && git clone https://github.com/skylot/jadx.git && cd jadx && ./gradlew dist
+# Note: Add to PATH: export PATH="/tmp/jadx/build/jadx/bin:$PATH"
 
 # apktool (resource/manifest extraction)
 apt-get install -y apktool
-
-# Ensure jadx binary is in PATH
-export PATH="/tmp/jadx/build/jadx/bin:$PATH"
 ```
+
+### Versions
+
+- **jadx:** dev (commit version)
+- **apktool:** 2.7.0-dirty
+- **Java:** OpenJDK 21
+
+## Analysis Workflow
 
 ### Tools Usage
 
@@ -69,8 +73,8 @@ Save to `report.md`:
 ## Summary
 
 - **File Size:** X MB  
-- **Decompilation:** Success/Partial (N errors)
-- **Tools Used:** jadx, apktool
+- **Decompilation:** jadx: N classes (N errors), apktool: decoded
+- **Tools Used:** jadx v<version>, apktool v<version>
 
 ---
 
@@ -138,11 +142,19 @@ projects/apks/<name>/
 
 ## Reproducibility Checklist
 
-- [ ] jadx version documented (`jadx --version`)
-- [ ] apktool version documented (`apktool --version`)
-- [ ] Java version documented (`java -version`)
+- [ ] jadx version: dev (commit version)
+- [ ] apktool version: 2.7.0-dirty
+- [ ] Java version: OpenJDK 21
 - [ ] Full command-line commands in workflow
+- [ ] jadx runs with: `jadx -d extracted-all <apk>`
+- [ ] apktool runs with: `apktool d <apk> -o apktool -f`
 - [ ] No hardcoded secrets — all injected at runtime
 - [ ] `baseUrl` explicitly noted as runtime-injected (if used)
 - [ ] Report includes external services (Firebase, Pendo, Bugsnag, etc.)
 - [ ] Report includes RMS API endpoints (if applicable)
+
+## Commit Standards
+
+- Always commit report to `projects/apks/<name>/report.md`
+- Update `projects/apks/README.md` with new analysis
+- Update `MEMORY.md` with analysis summary
