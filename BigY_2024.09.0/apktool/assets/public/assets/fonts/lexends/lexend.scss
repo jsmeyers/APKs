@@ -1,0 +1,52 @@
+/* lexend-100 - latin */
+
+$lexend-font-path: $font-path !default;
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 100;
+  src:
+    url('#{$lexend-font-path}/lexend-v25-latin-100.woff2') format('woff2'),
+    url('#{$lexend-font-path}/Lexend-Thin-100.ttf') format('truetype');
+}
+/* lexend-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url('#{$lexend-font-path}/lexend-v25-latin-300.woff2') format('woff2'),
+    url('#{$lexend-font-path}/Lexend-Light-300.ttf') format('truetype');
+}
+/* lexend-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url('#{$lexend-font-path}/lexend-v25-latin-regular.woff2') format('woff2'),
+    url('#{$lexend-font-path}/Lexend-Regular-400.ttf') format('truetype');
+}
+/* lexend-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url('#{$lexend-font-path}/lexend-v25-latin-500.woff2') format('woff2'),
+    url('#{$lexend-font-path}/Lexend-Medium-500.ttf') format('truetype');
+}
+/* lexend-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url('#{$lexend-font-path}/lexend-v25-latin-700.woff2') format('woff2'),
+    url('#{$lexend-font-path}/Lexend-Bold-700.ttf') format('truetype');
+}

@@ -51,6 +51,22 @@ John
   - Hardcoded secrets: None
   - Analytics tracking active
 
+### BigY_2024.09.0
+- **Date:** 2026-02-20
+- **File:** `Mark43_OnScene_2024.09.0.apk` (29 MB XAPK) — *renamed from original*
+- **Report:** [BigY_2024.09.0/report.md](BigY_2024.09.0/report.md)
+- **Package:** `sysnify.com.bigyrelationshop` (Big Y shopping app)
+- **Tech Stack:**
+  - Big Y shopping app (sysnify)
+  - Firebase Crashlytics
+  - Google Maps API
+  - Google Measurement, Google Ads
+- **Findings:**
+  - Decompilation: Success
+  - External services: Firebase, Google Maps, Analytics
+  - Google API key exposed in `strings.xml`
+  - No custom backend RMS endpoints (different app)
+
 ### NCSOLogger
 - **Date:** 2026-02-20
 - **File:** `NCSOLogger.apk` (7.5 MB XAPK)

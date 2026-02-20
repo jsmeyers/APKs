@@ -1,0 +1,82 @@
+[
+	{
+		"pkg": "@capacitor-community/barcode-scanner",
+		"classpath": "com.getcapacitor.community.barcodescanner.BarcodeScanner"
+	},
+	{
+		"pkg": "@capacitor-firebase/analytics",
+		"classpath": "io.capawesome.capacitorjs.plugins.firebase.analytics.FirebaseAnalyticsPlugin"
+	},
+	{
+		"pkg": "@capacitor-firebase/crashlytics",
+		"classpath": "io.capawesome.capacitorjs.plugins.firebase.crashlytics.FirebaseCrashlyticsPlugin"
+	},
+	{
+		"pkg": "@capacitor-firebase/messaging",
+		"classpath": "io.capawesome.capacitorjs.plugins.firebase.messaging.FirebaseMessagingPlugin"
+	},
+	{
+		"pkg": "@capacitor/app",
+		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
+	},
+	{
+		"pkg": "@capacitor/app-launcher",
+		"classpath": "com.capacitorjs.plugins.applauncher.AppLauncherPlugin"
+	},
+	{
+		"pkg": "@capacitor/browser",
+		"classpath": "com.capacitorjs.plugins.browser.BrowserPlugin"
+	},
+	{
+		"pkg": "@capacitor/device",
+		"classpath": "com.capacitorjs.plugins.device.DevicePlugin"
+	},
+	{
+		"pkg": "@capacitor/geolocation",
+		"classpath": "com.capacitorjs.plugins.geolocation.GeolocationPlugin"
+	},
+	{
+		"pkg": "@capacitor/google-maps",
+		"classpath": "com.capacitorjs.plugins.googlemaps.CapacitorGoogleMapsPlugin"
+	},
+	{
+		"pkg": "@capacitor/keyboard",
+		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
+	},
+	{
+		"pkg": "@capacitor/local-notifications",
+		"classpath": "com.capacitorjs.plugins.localnotifications.LocalNotificationsPlugin"
+	},
+	{
+		"pkg": "@capacitor/network",
+		"classpath": "com.capacitorjs.plugins.network.NetworkPlugin"
+	},
+	{
+		"pkg": "@capacitor/share",
+		"classpath": "com.capacitorjs.plugins.share.SharePlugin"
+	},
+	{
+		"pkg": "@capacitor/splash-screen",
+		"classpath": "com.capacitorjs.plugins.splashscreen.SplashScreenPlugin"
+	},
+	{
+		"pkg": "@capacitor/status-bar",
+		"classpath": "com.capacitorjs.plugins.statusbar.StatusBarPlugin"
+	},
+	{
+		"pkg": "@capgo/capacitor-native-biometric",
+		"classpath": "ee.forgr.biometric.NativeBiometric"
+	},
+	{
+		"pkg": "@pantrist/capacitor-firebase-dynamic-links",
+		"classpath": "com.pantrist.firebase.dynamiclinks.CapacitorFirebaseDynamicLinks"
+	},
+	{
+		"pkg": "capacitor-native-settings",
+		"classpath": "nl.raphael.settings.NativeSettingsPlugin"
+	},
+	{
+		"pkg": "capacitor-plugin-safe-area",
+		"classpath": "com.capacitor.safearea.SafeAreaPlugin"
+	}
+]
