@@ -79,15 +79,12 @@
   - `QRCodeActivity.java` — QR code presentation
   - `MipcaActivityCapture.java` — Camera-based QR scanning
 - **Purpose:** Device pairing — stores mesh configuration for BLE light control
-
----
-
-## Technical Details
-
-- **BLE Protocol:** Custom LiteTrace BLE API
-- **Network:** OkHttp + Retrofit HTTP client
-- **Async:** RxJava (ReactiveX)
-- **Image Processing:** ZXing for QR code scanning and generation
+- **Administrator QR Code:**
+  - High-permission QR for system control
+  - Shows "Administrator QR code" text
+  - Orange circular logo with embedded white QR code + hand icon
+  - Grants full system control (device management, settings)
+  - Intended for system commissioners only
 
 ---
 
