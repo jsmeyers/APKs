@@ -53,7 +53,7 @@ John
 
 ### BigY_2024.09.0
 - **Date:** 2026-02-20
-- **File:** `Mark43_OnScene_2024.09.0.apk` (29 MB XAPK) — *renamed from original*
+- **File:** `BigY_2024.09.0.xapk` (29 MB XAPK) — original filename
 - **Report:** [BigY_2024.09.0/report.md](BigY_2024.09.0/report.md)
 - **Package:** `sysnify.com.bigyrelationshop` (Big Y shopping app)
 - **Tech Stack:**
