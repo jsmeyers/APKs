@@ -88,6 +88,23 @@
 
 ---
 
+## QR Code Hierarchy
+
+**Images:** 3 QR code generation steps captured in screenshots (forwarded from John, 2026-02-17)
+
+| QR Type | Description | Permissions |
+|---------|-------------|-------------|
+| **Administrator QR** | Orange circular logo with embedded white QR code + hand icon | Full system control (device management, settings creation/deletion) — intended for system commissioners |
+| Standard User QR | (Not visible in analysis) | Likely limited to light control only |
+
+** QR Code Features:**
+- **Purpose:** Device pairing and mesh configuration
+- **Data:** `MeshQRCode` structure (meshName, pinData, pinName, lights, devices)
+- **UI:** App title "My Zones", "Administrator QR code" text block
+- **Visual:** Large black-and-white QR with orange centered logo containing QR icon + hand icon
+
+---
+
 ## Technical Details
 
 - **BLE Protocol:** Custom LiteTrace BLE API
