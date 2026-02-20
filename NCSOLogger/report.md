@@ -29,6 +29,7 @@
 
 ### Google Firebase
 - Firebase Crashlytics (`https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/%s/settings`)
+- API Key: `AIzaSyDkv5-7W4L1GuWvrs7jdXYl0pf_MVJhM90` (hardcoded in `strings.xml`)
 - Required config: API Key, App ID, Project ID
 
 ### Google Services
@@ -65,7 +66,7 @@
 
 | Pattern | Location | Status |
 |---------|----------|--------|
-| Hardcoded secrets (API keys, tokens, passwords) | None | Clean |
+| Hardcoded API keys | `strings.xml`: `google_api_key` = `AIzaSyDkv5-7W4L1Gu...` | ⚠️ Exposed |
 | Insecure storage (SharedPreferences, plaintext) | `PARAM_MESH_PASSWORD` stored in sharedprefs | ⚠️ Weak crypto |
 | WebView JS interface usage | Scanned | — |
 | Certificate validation bypass | `RetrofitBuilder$1` implements custom SSL pinning | Normal |
