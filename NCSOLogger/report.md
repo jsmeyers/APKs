@@ -62,6 +62,44 @@
 
 ---
 
+## UI/UX Findings
+
+- **App Title:** "My Zones" (LiteTrace SmartLight)
+- **Main Feature:** "My Lights" pop-up — lighting control interface
+- **Visual Design:** Material Design (resources confirm lighting-themed icons: `qr_flash_normal`, `qr_scan_line`, `qrcode_scan_line`)
+
+---
+
+## QR Code Generation
+
+- **Library:** ZXing (com.google.zxing)
+- **Data Structure:** `com.litetrace.bluetooth.light.model.MeshQRCode`
+  - Fields: `index`, `meshName`, `pinData`, `pinName`, `lights`, `devices`
+- **Activity Classes:**
+  - `QRCodeActivity.java` — QR code presentation
+  - `MipcaActivityCapture.java` — Camera-based QR scanning
+- **Purpose:** Device pairing — stores mesh configuration for BLE light control
+
+---
+
+## Technical Details
+
+- **BLE Protocol:** Custom LiteTrace BLE API
+- **Network:** OkHttp + Retrofit HTTP client
+- **Async:** RxJava (ReactiveX)
+- **Image Processing:** ZXing for QR code scanning and generation
+
+---
+
+## Technical Details
+
+- **BLE Protocol:** Custom LiteTrace BLE API
+- **Network:** OkHttp + Retrofit HTTP client
+- **Async:** RxJava (ReactiveX)
+- **Image Processing:** ZXing for QR code scanning and generation
+
+---
+
 ## Suspicious Patterns
 
 | Pattern | Location | Status |
