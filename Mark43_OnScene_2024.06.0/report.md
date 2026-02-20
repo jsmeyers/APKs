@@ -45,7 +45,7 @@
 
 | Pattern | Location | Status |
 |---------|----------|--------|
-| Hardcoded secrets (API keys, tokens, passwords) | None | ✅ Clean |
+| Hardcoded secrets (API keys, tokens, passwords) | None | Clean |
 | Insecure storage (SharedPreferences, plaintext) | Scanned | — |
 | WebView JS interface usage | Scanned | — |
 | Certificate validation bypass | Scanned | — |
