@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:id="@id/topBarFull" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MB_top_button_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/defaultBackButton" android:src="@drawable/mb_ic_exit" android:contentDescription="@string/mb_close" style="@style/MB_top_button" />
+    <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/defaultHelpButton" android:visibility="gone" android:layout_marginRight="8.0dip" android:src="@drawable/mb_help" android:contentDescription="@string/mb_help" style="@style/MB_top_button" />
+    <ImageButton android:id="@id/defaultTorchButton" android:src="@drawable/mb_ic_flash_off" android:contentDescription="@string/mb_flashlight" style="@style/MB_top_button" />
+</LinearLayout>

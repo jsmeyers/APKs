@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mb_instructions_line_height">14.0sp</dimen>
+    <dimen name="mb_instructions_text_size">12.0sp</dimen>
+    <dimen name="mb_page_indicator_margin">10.0dip</dimen>
+    <dimen name="mb_page_indicator_radius">3.0dip</dimen>
+    <dimen name="mb_powered_by_microblink">10.0dip</dimen>
+    <dimen name="mb_reticle_overlay_blinkid_onboarding_image_height">140.0dip</dimen>
+    <dimen name="mb_reticle_overlay_blinkid_onboarding_image_width">200.0dip</dimen>
+    <dimen name="mb_reticle_overlay_blinkid_onboarding_margin_top">30.0dip</dimen>
+    <dimen name="mb_reticle_overlay_hold_in_hand_dialog_text_size_message">12.0sp</dimen>
+    <dimen name="mb_reticle_overlay_instruction_illustration_padding">3.0dip</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_content_margin_horizontal">15.0dip</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_image_vertical_margin">12.0dip</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_text_size_message">12.0sp</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_title_content_distance">6.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_button_margin_bottom">9.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_button_margin_end">6.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_content_distance">12.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_content_margin_horizontal">15.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_height_bottom_bar">50.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_icon_size">20.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_image_height">140.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_land_content_margin_horizontal">20.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_margin">20.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_margin_big">40.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_line_spacing_extra_message">10.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_size_button">14.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_size_message">14.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_size_title">14.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_title_content_distance">6.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_tooltip_margin_end">10.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_tooltip_padding">8.0dip</dimen>
+</resources>

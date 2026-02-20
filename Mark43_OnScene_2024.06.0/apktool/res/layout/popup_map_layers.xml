@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/layout_base_layers" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/cardBackground" app:cardElevation="@dimen/map_layers_popup_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_spacing" android:text="@string/title_map_mode" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_title">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_default" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center_horizontal" android:id="@id/button_default" android:layout_width="55.0dip" android:layout_height="55.0dip" app:cardCornerRadius="10.0dip" app:strokeColor="@color/gold">
+                    <ImageView android:id="@id/imageDefaultMap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_map_type_default" />
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" android:layout_gravity="center_horizontal" android:padding="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_string" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_default" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center_horizontal" android:id="@id/button_topographic" android:layout_width="55.0dip" android:layout_height="55.0dip" app:cardCornerRadius="10.0dip" app:strokeColor="@color/gold">
+                    <ImageView android:id="@id/imageTopoMap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_map_type_topo" />
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" android:layout_gravity="center_horizontal" android:padding="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topographic" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_default" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:layout_gravity="center_horizontal" android:id="@id/button_satellite" android:layout_width="55.0dip" android:layout_height="55.0dip" app:cardCornerRadius="10.0dip" app:strokeColor="@color/gold">
+                    <ImageView android:id="@id/imageSatelliteMap" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_map_type_satellite" />
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" android:layout_gravity="center_horizontal" android:padding="@dimen/padding_half" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/satellite" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="mb_instructions_line_height">24.0sp</dimen>
+    <dimen name="mb_instructions_text_size">20.0sp</dimen>
+    <dimen name="mb_page_indicator_margin">20.0dip</dimen>
+    <dimen name="mb_page_indicator_radius">7.0dip</dimen>
+    <dimen name="mb_reticle_overlay_blinkid_onboarding_image_height">200.0dip</dimen>
+    <dimen name="mb_reticle_overlay_blinkid_onboarding_image_width">280.0dip</dimen>
+    <dimen name="mb_reticle_overlay_blinkid_onboarding_margin_top">80.0dip</dimen>
+    <dimen name="mb_reticle_overlay_hold_in_hand_dialog_text_size_message">16.0sp</dimen>
+    <dimen name="mb_reticle_overlay_instruction_illustration_padding">10.0dip</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_image_vertical_margin">30.0dip</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_text_size_message">16.0sp</dimen>
+    <dimen name="mb_reticle_overlay_introduction_dialog_title_content_distance">16.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_button_margin_bottom">22.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_button_margin_end">16.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_content_distance">30.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_height_bottom_bar">60.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_image_height">200.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_image_width">280.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_margin_big">100.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_size_button">18.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_size_message">18.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_text_size_title">30.0sp</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_title_content_distance">16.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_tooltip_margin_end">20.0dip</dimen>
+    <dimen name="mb_reticle_overlay_onboarding_tooltip_text_size">14.0sp</dimen>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
+</resources>

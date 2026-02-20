@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="@integer/mb_card_scale_half_duration" android:valueFrom="-1.1" android:valueTo="-1.0" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/mb_card_scale_half_duration" android:valueFrom="1.1" android:valueTo="1.0" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@android:interpolator/accelerate_decelerate" android:duration="@integer/mb_card_flip_rotation_duration" android:valueFrom="-90" android:valueTo="-180" android:propertyName="rotationY" />
+    <objectAnimator android:duration="@integer/mb_card_flip_fade_duration" android:startOffset="@integer/mb_card_flip_fade_out_offset" android:valueFrom="1.0" android:valueTo="0.0" android:propertyName="alpha" />
+</set>

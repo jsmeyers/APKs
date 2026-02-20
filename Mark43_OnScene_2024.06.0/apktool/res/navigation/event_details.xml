@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/event_details" app:startDestination="@id/queuesEventDetailsPagerFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.mark43.onscene.presentation.eventDetail.presentation.EventDetailsPagerFragment" android:id="@id/queuesEventDetailsPagerFragment">
+        <argument android:name="agencyEventId" app:argType="long" app:nullable="false" />
+        <argument android:name="isScheduled" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="isComingFromMap" android:defaultValue="false" app:argType="boolean" />
+        <action android:id="@id/action_navigation_event_details_to_assigned_units" app:destination="@id/assignedUnitsFragment" />
+        <action android:id="@id/action_navigation_event_details_to_mapFragment" app:destination="@id/map" app:popUpTo="@id/queues" app:popUpToInclusive="true" app:popUpToSaveState="true" app:restoreState="true" />
+        <action android:id="@id/action_navigation_event_details_pager_to_mapFragment2" app:destination="@id/map" app:popUpTo="@id/map" app:popUpToInclusive="true" />
+        <action android:id="@id/action_navigation_event_details_to_caution_details" app:destination="@id/locationCautionDetailsFragment" />
+        <action android:id="@id/action_navigation_event_details_to_event_details" app:destination="@id/event_details" />
+        <deepLink android:id="@id/deepLink" app:uri="onscene://queues/eventDetailsPager/{agencyEventId}?isScheduled={isScheduled}" />
+    </fragment>
+    <fragment android:name="com.mark43.onscene.presentation.locationCautions.presentation.LocationCautionDetailsFragment" android:id="@id/locationCautionDetailsFragment">
+        <argument android:name="cautionsData" app:argType="com.core.model.cad.HydratedReportingParty" app:nullable="false" />
+        <action android:id="@id/action_navigation_location_caution_details_to_navigation_location_caution_details_sub_premise" app:destination="@id/locationCautionDetailsSubPremiseFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.onscene.presentation.locationCautions.presentation.LocationCautionDetailsFragment" android:id="@id/locationCautionDetailsSubPremiseFragment">
+        <argument android:name="subPremise" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:name="com.mark43.onscene.presentation.assignedUnits.presentation.AssignedUnitsFragment" android:id="@id/assignedUnitsFragment">
+        <argument android:name="agencyEventId" app:argType="long" app:nullable="false" />
+    </fragment>
+</navigation>

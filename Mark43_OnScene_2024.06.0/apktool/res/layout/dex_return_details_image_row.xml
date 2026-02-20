@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/textSecondary" android:gravity="end|bottom|center" android:id="@id/row_number" android:layout_width="0.0dip" android:layout_height="fill_parent" android:fontFamily="@font/roboto_mono_regular" />
+    <FrameLayout android:layout_gravity="start" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+        <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="wrap_content" android:src="@drawable/dl_photo_placeholder" android:scaleType="fitStart" android:minHeight="140.0dip" android:contentDescription="@string/dl_photo" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_image_return" android:background="@drawable/dl_photo_background" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="140.0dip">
+            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_arc_person" android:importantForAccessibility="no" app:tint="@color/textSecondary" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/textSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/no_image_return" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/retry_image_return" android:background="@drawable/dl_photo_background" android:visibility="gone" android:clickable="true" android:layout_width="140.0dip" android:layout_height="140.0dip" android:foregroundTint="@color/colorPrimary">
+            <TextView android:textSize="10.0dip" android:textColor="@color/textSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/image_failed_to_load_retry" />
+            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_arc_refresh" android:importantForAccessibility="no" app:tint="@color/colorPrimary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error" android:background="@drawable/dl_photo_background" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="140.0dip">
+            <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_arc_alert" android:importantForAccessibility="no" app:tint="@color/textSecondary" />
+            <TextView android:textSize="10.0dip" android:textColor="@color/textSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Error retrieving image." />
+            <TextView android:textSize="10.0dip" android:textColor="@color/textSecondary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Rerun inquiry to retry" />
+        </LinearLayout>
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progress" android:layout_width="140.0dip" android:layout_height="140.0dip" android:indeterminate="false" app:indicatorColor="@color/colorPrimary" app:indicatorInset="16.0dip" app:indicatorSize="100.0dip" app:trackThickness="6.0dip" />
+    </FrameLayout>
+</TableRow>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/padding_half" android:paddingBottom="@dimen/padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_half" android:paddingEnd="@dimen/padding_half"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:textColor="@color/tungsten" android:id="@id/text_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" app:layout_constraintBottom_toTopOf="@id/layout_caution_item_container" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.flexbox.FlexboxLayout android:orientation="horizontal" android:id="@id/layout_caution_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:flexWrap="wrap" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_line_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

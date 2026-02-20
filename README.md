@@ -5,7 +5,8 @@ Static analysis of Android APK/XAPK files for security review.
 ## Tech Stack
 
 - GitHub: `jsmeyers/APKs`
-- Tools: `jadx`, `apkanalyzer`, `strings`, custom scripts
+- Tools: `jadx`, `apktool`, `strings`, custom scripts
+- Workflow: See `projects/apks/WORKFLOW.md`
 
 ## Owner
 

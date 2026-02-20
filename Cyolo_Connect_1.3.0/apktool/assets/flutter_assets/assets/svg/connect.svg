@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="170">
+  <defs>
+    <linearGradient id="a" x1="85" x2="85" y1="0" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e1e1e1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="85" cy="85" r="85" fill="url(#a)"/>
+  <circle cx="85" cy="85" r="70" fill="#0d6efd"/>
+  <path fill="#000850" d="M85 146c-37.15 0-67.52-28.94-69.84-65.5A74.57 74.57 0 0 0 15 85c0 38.66 31.34 70 70 70s70-31.34 70-70c0-1.51-.06-3.01-.16-4.5C152.52 117.06 122.15 146 85 146Z" opacity=".2"/>
+  <path fill="#fff" d="M85 24c37.15 0 67.52 28.94 69.84 65.5.09-1.49.16-2.99.16-4.5 0-38.66-31.34-70-70-70S15 46.34 15 85a67.17 67.17 0 0 0 .16 4.5C17.48 52.94 47.85 24 85 24z" opacity=".1"/>
+  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M102.68 67.89c3.5 3.5 5.88 7.95 6.84 12.8s.47 9.88-1.42 14.44c-1.89 4.57-5.1 8.47-9.21 11.22A24.96 24.96 0 0 1 85 110.56a25.04 25.04 0 0 1-13.89-4.21 25.005 25.005 0 0 1-9.21-11.22 24.96 24.96 0 0 1-1.42-14.44c.96-4.85 3.34-9.3 6.84-12.8M85.01 59v26"/>
+</svg>

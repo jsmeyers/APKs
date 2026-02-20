@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdk.pendo.io.views.custom.PendoCarouselLayout android:id="@id/pendo_view_pager_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/pendo_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/pendo_view_pager_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.viewpager.widget.ViewPager>
+</sdk.pendo.io.views.custom.PendoCarouselLayout>

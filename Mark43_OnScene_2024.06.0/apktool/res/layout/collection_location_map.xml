@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/map_cooridnator" android:background="@color/background2" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/location_details" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.esri.arcgisruntime.mapping.view.MapView android:id="@id/map_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/userLocationFloatingActionButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_spacing" android:src="@drawable/ic_my_location_24" android:contentDescription="@string/update_my_location" android:elevation="16.0dip" app:backgroundTint="@color/map_layers_fab_background" app:borderWidth="0.0dip" app:fabSize="mini" app:pressedTranslationZ="16.0dip" app:tint="@color/map_layers_fab_icon" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/location_details" android:background="@color/background1" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <TextView android:textColor="@color/textPrimary" android:id="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:textAllCaps="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+        <TextView android:textColor="@color/textPrimary" android:id="@id/address_coordinates" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

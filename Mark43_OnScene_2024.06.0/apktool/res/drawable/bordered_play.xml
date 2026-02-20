@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:layout_width="24.0dip" android:layout_height="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/arc_raw_black_alpha_600" />
+            <corners android:radius="2.0sp" />
+            <size android:height="24.0dip" android:width="24.0dip" />
+        </shape>
+    </item>
+    <item android:tint="@color/brandAccent" android:drawable="@drawable/ic_play" />
+</layer-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <calloutStyle backgroundColor="#ffc0c0c0" borderColor="@android:color/white" borderWidth="4" cornerRadius="20" leaderLength="10" leaderPosition="AUTOMATIC" leaderWidth="20" maxHeight="500" maxWidth="600" minHeight="100" minWidth="200" />
+</resources>

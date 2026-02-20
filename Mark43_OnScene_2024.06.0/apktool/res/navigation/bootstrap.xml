@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/bootstrap" app:startDestination="@id/bootstrapFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Bootstrap Fragment" android:name="com.mark43.onscene.presentation.bootstrap.presentation.BootstrapFragment" android:id="@id/bootstrapFragment">
+        <action android:id="@id/action_bootstrap_to_missing_abilities" app:destination="@id/missingAbilitiesFragment" app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim" app:popUpTo="@id/bootstrapFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="Missing Abilities Fragment" android:name="com.mark43.onscene.presentation.bootstrap.presentation.MissingAbilitiesFragment" android:id="@id/missingAbilitiesFragment">
+        <argument android:name="missingAbilities" app:argType="com.mark43.onscene.presentation.bootstrap.data.MissingAbilityNavArgument" app:nullable="false" />
+        <action android:id="@id/action_missing_abilities_to_bootstrap" app:destination="@id/bootstrapFragment" app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim" app:popEnterAnim="@anim/nav_default_pop_enter_anim" app:popExitAnim="@anim/nav_default_pop_exit_anim" app:popUpTo="@id/missingAbilitiesFragment" app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

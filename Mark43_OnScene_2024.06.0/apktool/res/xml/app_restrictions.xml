@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <restriction android:description="@string/mdm_department_title_description" android:title="@string/department_title" android:key="department_title" android:defaultValue="" android:restrictionType="string" />
+    <restriction android:description="@string/mdm_advanced_configuration_description" android:title="@string/advanced_configuration_allowed" android:key="advanced_configuration_allowed" android:defaultValue="true" android:restrictionType="bool" />
+    <restriction android:title="@string/tenants" android:key="tenants" android:restrictionType="bundle_array">
+        <restriction android:title="@string/tenant_configuration" android:key="tenant" android:restrictionType="bundle">
+            <restriction android:description="@string/mdm_domain_label_description" android:title="@string/label" android:key="label" android:restrictionType="string" />
+            <restriction android:description="@string/mdm_domain_description" android:entries="@array/domainLabels" android:title="@string/domain" android:key="domain" android:defaultValue="mark43.com" android:entryValues="@array/domainNames" android:restrictionType="choice" />
+            <restriction android:description="@string/mdm_host_description" android:title="@string/host" android:key="host" android:restrictionType="string" />
+        </restriction>
+    </restriction>
+</restrictions>

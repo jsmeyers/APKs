@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:padding="@dimen/default_spacing" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/map_marker_icon" />
+    <TextView android:textColor="@color/textPrimary" android:layout_gravity="center_vertical" android:id="@id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_spacing" />
+</LinearLayout>

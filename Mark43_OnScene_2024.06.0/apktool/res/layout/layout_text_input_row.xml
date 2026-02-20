@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/default_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/personnel" app:layout_constraintEnd_toStartOf="@id/imageViewTrash" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:id="@id/autoCompleteTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:completionThreshold="1" android:inputType="textCapWords|textNoSuggestions" android:imeOptions="actionNext" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <ImageView android:id="@id/imageViewTrash" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_delete_black_24dp" android:layout_marginStart="@dimen/default_spacing" app:layout_constraintBottom_toBottomOf="@id/textInputLayout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/textInputLayout" app:layout_constraintTop_toTopOf="@id/textInputLayout" app:tint="@color/iconColor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

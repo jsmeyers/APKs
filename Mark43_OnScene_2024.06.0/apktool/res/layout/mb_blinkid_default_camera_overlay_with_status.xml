@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/default_photopay_viewfinder" android:background="@drawable/mb_gradient_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextSwitcher android:layout_gravity="bottom|center" android:id="@id/defaultStatusTextSwitcher" android:background="@drawable/mb_rounded_border" android:padding="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:measureAllChildren="false" android:minWidth="1.0dip" android:minHeight="1.0dip" android:drawablePadding="10.0dip" />
+    <include layout="@layout/mb_blinkid_top_button_bar" />
+</FrameLayout>

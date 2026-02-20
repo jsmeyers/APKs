@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/galaxy" />
+    <item android:gravity="center" android:height="36.0dip" android:width="200.0dip">
+        <bitmap android:gravity="fill" android:src="@drawable/mark43_logo_horizontal_white_text" />
+    </item>
+</layer-list>

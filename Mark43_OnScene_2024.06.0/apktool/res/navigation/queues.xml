@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/queues" app:startDestination="@id/queuesFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/filter_sort" />
+    <include app:graph="@navigation/event_details" />
+    <fragment android:name="com.mark43.onscene.presentation.queue.presentation.main.QueueFragment" android:id="@id/queuesFragment">
+        <action android:id="@id/action_navigation_queuesFragment_to_mapFragment" app:destination="@id/map" app:popUpTo="@id/queues" app:popUpToInclusive="true" app:popUpToSaveState="true" app:restoreState="true" />
+        <action android:id="@id/action_navigation_queuesFragment_to_queuesEventDetailsPagerFragment" app:destination="@id/event_details" />
+        <action android:id="@id/action_navigation_queuesFragment_to_filterSort" app:destination="@id/filter_sort" />
+    </fragment>
+</navigation>

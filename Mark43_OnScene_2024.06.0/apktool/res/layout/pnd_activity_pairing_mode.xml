@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/pnd_activity_horizontal_margin" android:paddingTop="@dimen/pnd_activity_vertical_margin" android:paddingRight="@dimen/pnd_activity_horizontal_margin" android:paddingBottom="@dimen/pnd_activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:logo="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@android:color/black" android:gravity="center" android:id="@id/pairing_mode_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="94.0dip" android:text="@string/pnd_sending_image" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-light" />
+    <ProgressBar android:gravity="center_horizontal" android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

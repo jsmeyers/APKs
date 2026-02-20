@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/dex" app:startDestination="@id/dexDashboardFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.mark43.feature.dex.presentation.dashboard.DexDashboardFragment" android:id="@id/dexDashboardFragment">
+        <action android:id="@id/action_navigation_dex_returns" app:destination="@id/dexReturnsFragment" />
+        <action android:id="@id/action_navigation_dex_dashboard_to_inquiry" app:destination="@id/dexInquiryFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.dex.presentation.detail.DexReturnDetailsPagerFragment" android:id="@id/dexReturnsFragment">
+        <argument android:name="outgoingMessageId" app:argType="long" app:nullable="false" />
+        <argument android:name="incomingMessageId" android:defaultValue="-1L" app:argType="long" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.dex.presentation.detail.DexImageViewerFragment" android:id="@id/dexImageViewer" />
+    <fragment android:name="com.mark43.feature.dex.presentation.inquiry.DexInquiryFragment" android:id="@id/dexInquiryFragment">
+        <argument android:name="inquiryType" app:argType="com.mark43.feature.dex.domain.InquiryType" app:nullable="false" />
+        <argument android:name="dexInquiry" android:defaultValue="@null" app:argType="com.mark43.feature.dex.data.remote.dto.DexInquiry" app:nullable="true" />
+    </fragment>
+</navigation>

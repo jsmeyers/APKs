@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/cobalt_shimmer" android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/ic_fingerprint_white_48dp" />
+    </item>
+</layer-list>

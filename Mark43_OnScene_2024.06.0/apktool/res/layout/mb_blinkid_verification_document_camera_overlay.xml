@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/torchContainer" android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/mb_blinkid_top_button_bar" />
+    </FrameLayout>
+    <View android:id="@id/viewfinderMarginTop" android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="@dimen/mb_margin_torch_button" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.5">
+        <View android:background="@color/mb_overlay_camera_translucent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.05" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.9">
+            <com.microblink.blinkid.view.layout.AspectRatioFrameLayout android:id="@id/viewfinderContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:mb_aspectRatio="1.5857725">
+                <RelativeLayout android:id="@id/viewfinder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                    <com.microblink.blinkid.view.viewfinder.ViewfinderShapeView android:id="@id/viewfinderRectangle" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mb_shapeType="rectangle" style="@style/MBViewfinderShape.Document" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:layout_centerInParent="true">
+                        <TextView android:id="@id/tvCardMessage" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="@style/MBVerificationSplashText" />
+                        <ImageView android:id="@id/ivCardIcon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.microblink.blinkid.view.layout.AspectRatioFrameLayout>
+            <View android:id="@id/shadowLeft" android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/viewfinderContainer" />
+            <View android:id="@id/shadowRight" android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/viewfinderContainer" />
+            <View android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/shadowRight" android:layout_toRightOf="@id/shadowLeft" android:layout_above="@id/viewfinderContainer" />
+            <View android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/shadowRight" android:layout_toRightOf="@id/shadowLeft" android:layout_below="@id/viewfinderContainer" />
+        </RelativeLayout>
+        <View android:background="@color/mb_overlay_camera_translucent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.05" />
+    </LinearLayout>
+    <RelativeLayout android:background="@color/mb_overlay_camera_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <TextView android:id="@id/tvGlareMessage" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/mb_tooltip_glare" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/mb_activity_horizontal_margin_verification_flow" android:layout_marginEnd="@dimen/mb_activity_horizontal_margin_verification_flow" style="@style/MB_glare_message_text" />
+        <TextView android:id="@id/documentScanInstructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/MBVerificationInstructions.Text" />
+    </RelativeLayout>
+</LinearLayout>

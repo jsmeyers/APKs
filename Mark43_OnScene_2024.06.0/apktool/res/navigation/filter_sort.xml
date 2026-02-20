@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/filter_sort" app:startDestination="@id/mainFilterSortFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Filter And Sort" android:name="com.mark43.feature.filterSort.presentation.main.MainFilterSortFragment" android:id="@id/mainFilterSortFragment">
+        <argument android:name="origin" app:argType="string" />
+        <action android:id="@id/action_mainFilterSortFragment_to_dispatchAreaFiltersFragment" app:destination="@id/dispatchAreaFiltersFragment" />
+        <action android:id="@id/action_mainFilterSortFragment_to_subdivisionFiltersFragment" app:destination="@id/subdivisionFiltersFragment" />
+        <action android:id="@id/action_mainFilterSortFragment_to_unitTypeFiltersFragment" app:destination="@id/unitTypeFiltersFragment" />
+        <action android:id="@id/action_mainFilterSortFragment_to_eventPriorityFiltersFragment" app:destination="@id/eventPrioritiesFiltersFragment" />
+        <action android:id="@id/action_mainFilterSortFragment_to_unitStatusFiltersFragment" app:destination="@id/unitStatusFiltersFragment" />
+    </fragment>
+    <fragment android:label="Dispatch Area" android:name="com.mark43.feature.filterSort.presentation.dispatchArea.DispatchAreaFiltersFragment" android:id="@id/dispatchAreaFiltersFragment">
+        <argument android:name="isEventFilter" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="Area" android:name="com.mark43.feature.filterSort.presentation.primarySubdivision.PrimarySubdivisionFiltersFragment" android:id="@id/subdivisionFiltersFragment">
+        <argument android:name="isEventFilter" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:label="Unit Type" android:name="com.mark43.feature.filterSort.presentation.unitType.UnitTypeFiltersFragment" android:id="@id/unitTypeFiltersFragment" />
+    <fragment android:label="Unit Status" android:name="com.mark43.feature.filterSort.presentation.unitStatus.UnitStatusFiltersFragment" android:id="@id/unitStatusFiltersFragment" />
+    <fragment android:label="Event Priority" android:name="com.mark43.feature.filterSort.presentation.eventPriority.EventPriorityFiltersFragment" android:id="@id/eventPrioritiesFiltersFragment" />
+</navigation>

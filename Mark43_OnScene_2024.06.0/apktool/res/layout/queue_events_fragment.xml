@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" tools:context="com.mark43.onscene.presentation.queue.presentation.event.QueueEventsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/toos">
+    <Button android:textColor="@color/textPrimary" android:layout_gravity="center_horizontal" android:id="@id/scroll_to_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/scroll_to_top" android:textAllCaps="false" android:backgroundTint="@color/surface3" app:cornerRadius="24.0dip" app:icon="@drawable/ic_arrow_up_16dp" app:iconPadding="6.0dip" app:iconTint="@color/textPrimary" style="@style/Widget.MaterialComponents.Button.Icon" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:background="@color/background2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:background="@color/background2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:background="@color/background2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" app:tabIndicatorHeight="0.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@color/textPrimary" app:tabTextAppearance="@style/AppTheme.TabTextAppearance" app:tabTextColor="@color/textSecondary" />
+                    <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/filter_and_sort" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/textPrimary" android:layout_gravity="end|center" android:id="@id/filter_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter" android:singleLine="true" android:layout_marginStart="8.0dip" />
+                        <ImageView android:layout_gravity="end|center" android:id="@id/sort_direction_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_down_narrow" android:contentDescription="@string/ascending" android:layout_marginEnd="8.0dip" app:tint="@color/textPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/events_pager" android:background="@color/background2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/auth_title" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/arcgisruntime_http_auth_request_dialog_title" />
+    <TextView android:gravity="center_horizontal" android:id="@id/auth_hostname" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/auth_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textColor="@android:color/holo_red_light" android:gravity="center_horizontal" android:id="@id/auth_error" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/arcgisruntime_http_auth_request_dialog_invalid_credential" />
+    <EditText android:id="@id/auth_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/arcgisruntime_http_auth_request_dialog_username_hint" android:inputType="text" />
+    <EditText android:id="@id/auth_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip" android:hint="@string/arcgisruntime_http_auth_request_dialog_password_hint" android:inputType="textPassword" android:fontFamily="sans-serif" />
+</LinearLayout>

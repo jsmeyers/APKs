@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/map" app:startDestination="@id/mapFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/filter_sort" />
+    <include app:graph="@navigation/event_details" />
+    <fragment android:name="com.mark43.onscene.presentation.map.presentation.main.MapFragment" android:id="@id/mapFragment">
+        <argument android:name="location" app:argType="com.core.model.common.Location" app:nullable="true" />
+        <argument android:name="reportingParty" app:argType="com.core.model.cad.HydratedReportingParty" app:nullable="true" />
+        <argument android:name="hydratedAgencyEvent" app:argType="com.core.model.cad.HydratedAgencyEvent" app:nullable="true" />
+        <argument android:name="hydratedCadUnit" app:argType="com.core.model.cad.HydratedCadUnit" app:nullable="true" />
+        <argument android:name="hydratedCadUnit" app:argType="com.core.model.cad.HydratedCadUnit" app:nullable="true" />
+        <action android:id="@id/action_mapFragment_to_filter_sort" app:destination="@id/filter_sort" />
+        <action android:id="@id/action_mapFragment_to_event_details" app:destination="@id/event_details" />
+    </fragment>
+</navigation>

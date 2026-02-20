@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/cardBackground" app:cardUseCompatPadding="true" app:strokeColor="@color/whisper_40" app:strokeWidth="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/padding_half" android:paddingBottom="@dimen/padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_half" android:paddingEnd="@dimen/padding_half">
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@id/text_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

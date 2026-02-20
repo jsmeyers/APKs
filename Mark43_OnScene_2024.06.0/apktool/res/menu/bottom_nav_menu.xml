@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_arc_cad_event" android:id="@id/dashboard" android:title="@string/title_assignment" />
+    <item android:icon="@drawable/ic_arc_numbered_list" android:id="@id/queues" android:title="@string/title_queues" />
+    <item android:icon="@drawable/ic_arc_map" android:id="@id/map" android:title="@string/title_map" />
+    <item android:icon="@drawable/ic_arc_note" android:id="@id/collections" android:visible="false" android:title="@string/collections" />
+    <item android:icon="@drawable/ic_arc_data_exchange_inquiries" android:id="@id/dex" android:visible="false" android:title="@string/title_dex_inbox" />
+</menu>

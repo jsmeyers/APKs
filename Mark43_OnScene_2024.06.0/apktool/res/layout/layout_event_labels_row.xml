@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:id="@id/flexBoxLayout" android:paddingTop="@dimen/padding_half" android:paddingBottom="@dimen/padding_half" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_half" android:paddingEnd="@dimen/padding_half" app:flexWrap="wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

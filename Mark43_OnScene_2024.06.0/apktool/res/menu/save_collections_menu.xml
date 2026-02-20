@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_cloud_upload" android:id="@id/save_button" android:visible="false" android:orderInCategory="100" android:title="@string/done" app:iconTint="@color/menu_button" app:showAsAction="always" />
+    <group android:id="@id/edit_actions" android:orderInCategory="200">
+        <item android:icon="@drawable/ic_arc_trash_can" android:enabled="false" android:id="@id/cancel_button" android:visible="false" android:orderInCategory="300" android:title="@string/undo_changes" app:showAsAction="never" />
+        <item android:icon="@drawable/ic_arc_edit" android:id="@id/edit_title" android:orderInCategory="400" android:title="@string/edit_title" app:iconTint="@color/textPrimary" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/archive_group" android:orderInCategory="500">
+        <item android:icon="@drawable/ic_arc_archive" android:enabled="false" android:id="@id/archive_button" android:visible="false" android:orderInCategory="600" android:title="@string/archive" app:iconTint="@color/textPrimary" app:showAsAction="never" />
+        <item android:icon="@drawable/ic_arc_unarchive" android:enabled="false" android:id="@id/unarchive_button" android:visible="false" android:orderInCategory="700" android:title="@string/unarchive" app:iconTint="@color/textPrimary" app:showAsAction="never" />
+    </group>
+    <group android:id="@id/delete_group" android:orderInCategory="800">
+        <item android:icon="@drawable/ic_arc_trash_can" android:enabled="false" android:id="@id/delete_button" android:visible="false" android:orderInCategory="900" android:title="@string/delete" app:iconTint="@color/textPrimary" app:showAsAction="never" />
+    </group>
+</menu>

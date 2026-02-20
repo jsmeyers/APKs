@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="48.0dip" android:width="48.0dip">
+        <shape>
+            <solid android:color="#ffc4c4c4" />
+            <corners android:radius="8.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="16.0dip" android:width="16.0dip" android:drawable="@drawable/ic_arc_person" />
+</layer-list>

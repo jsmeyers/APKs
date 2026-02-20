@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<g id="g" transform="translate(0 -36)">
+<g id="k">
+<g id="h">
+<path id="l" d="M0-5-1.5-.2l2.8.9z" fill="#fff"/>
+<use transform="scale(-1 1)" width="180" height="120" xlink:href="#l"/>
+</g>
+<use transform="rotate(72)" width="180" height="120" xlink:href="#h"/>
+</g>
+<use transform="rotate(-72)" width="180" height="120" xlink:href="#h"/>
+<use transform="rotate(144)" width="180" height="120" xlink:href="#k"/>
+</g>
+</defs>
+<path d="M0 0h640v480H0z" fill="#cf142b"/>
+<path d="M0 0h640v320H0z" fill="#00247d"/>
+<path d="M0 0h640v160H0z" fill="#fc0"/>
+<g id="i" transform="matrix(4 0 0 4 320 336)">
+<g id="j">
+<use transform="rotate(10)" width="180" height="120" xlink:href="#g"/>
+<use transform="rotate(30)" width="180" height="120" xlink:href="#g"/>
+</g>
+<use transform="rotate(40)" width="180" height="120" xlink:href="#j"/>
+</g>
+<use transform="rotate(-80 320 336)" width="180" height="120" xlink:href="#i"/>
+</svg>

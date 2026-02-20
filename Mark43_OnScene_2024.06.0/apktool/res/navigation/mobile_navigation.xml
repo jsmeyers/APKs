@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/mobile_navigation" app:startDestination="@id/dashboard"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/dashboard" />
+    <include app:graph="@navigation/map" />
+    <include app:graph="@navigation/queues" />
+    <include app:graph="@navigation/dex" />
+    <include app:graph="@navigation/collections" />
+    <fragment android:name="com.mark43.onscene.presentation.editUnit.presentation.EditUnitFragment" android:id="@id/editUnitFragment" />
+    <fragment android:name="com.mark43.onscene.presentation.changeStatus.presentation.ChangeStatusFragment" android:id="@id/changeStatusFragment">
+        <action android:id="@id/action_navigation_change_status_to_navigation_transport_status" app:destination="@id/transportStatusFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.onscene.presentation.transportStatus.presentation.TransportStatusFragment" android:id="@id/transportStatusFragment">
+        <argument android:name="agencyEventId" app:argType="long" app:nullable="false" />
+        <argument android:name="unitId" app:argType="long" app:nullable="false" />
+        <argument android:name="transportType" app:argType="string" app:nullable="false" />
+        <argument android:name="statusId" app:argType="long" app:nullable="false" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.about.presentation.AboutFragment" android:id="@id/aboutFragment" />
+    <action android:id="@id/action_navigation_mapUnitLocation" app:destination="@id/map" app:popUpTo="@id/cadDashboardFragment" app:popUpToSaveState="true" app:restoreState="true" />
+    <fragment android:name="com.mark43.feature.webview.presentation.WebFragment" android:id="@id/webView">
+        <argument android:name="url" app:argType="string" app:nullable="true" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="28.0dip" android:width="28.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/police_unit_available_stroke_color" android:pathData="M16,0C24.8366,0 32,7.1634 32,16C32,24.8366 24.8366,32 16,32C7.1634,32 0,24.8366 0,16C0,7.1634 7.1634,0 16,0ZM16,3C8.8203,3 3,8.8203 3,16C3,23.1797 8.8203,29 16,29C23.1797,29 29,23.1797 29,16C29,8.8203 23.1797,3 16,3Z" android:fillType="evenOdd" />
+    <path android:fillColor="@color/police_unit_available_fill_color" android:pathData="M16,16m-13,0a13,13 0,1 1,26 0a13,13 0,1 1,-26 0" android:fillType="evenOdd" />
+    <path android:fillColor="@color/police_unit_available_badge_color" android:pathData="M10.0826,10.3534C9.508,15.3929 11.9675,20.2928 16.3321,22.7853C20.6968,20.2928 23.1576,15.3929 22.5804,10.3534C22.4739,10.427 22.3673,10.498 22.2608,10.5652C20.1971,11.7905 17.5397,11.0904 16.3321,9C16.2649,9.1091 16.2002,9.2169 16.1254,9.3209C14.7365,11.2984 12.0322,11.7588 10.0826,10.3534Z" android:fillType="evenOdd" />
+</vector>

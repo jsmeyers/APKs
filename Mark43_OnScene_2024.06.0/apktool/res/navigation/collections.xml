@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/collections" app:startDestination="@id/collectionsDashboardFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.mark43.feature.collections.presentation.ui.CollectionsDashboardFragment" android:id="@id/collectionsDashboardFragment">
+        <action android:id="@id/view_details" app:destination="@id/collectionDetailsPagerFragment" />
+        <action android:id="@id/view_archive" app:destination="@id/collectionArchiveFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.collections.presentation.ui.CollectionsArchiveFragment" android:id="@id/collectionArchiveFragment">
+        <action android:id="@id/view_details" app:destination="@id/collectionDetailsPagerFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.collections.presentation.details.ui.PagerFragment" android:id="@id/collectionDetailsPagerFragment">
+        <action android:id="@id/add_collection_location" app:destination="@id/collectionDetailsAddLocationFragment" />
+        <action android:id="@id/view_collection_location" app:destination="@id/collectionDetailsViewLocationMapFragment" />
+        <action android:id="@id/view_collection_image" app:destination="@id/collectionDetailsImageViewer" />
+        <action android:id="@id/view_person_image" app:destination="@id/personImageViewer" />
+        <action android:id="@id/view_collection_video" app:destination="@id/collectionDetailsVideoPlayer" />
+        <action android:id="@id/add_collection_camera" app:destination="@id/collectionCameraActivity" />
+        <action android:id="@id/add_collection_person" app:destination="@id/collectionDetailsAddPersonSearchFragment" />
+        <action android:id="@id/view_person_details" app:destination="@id/collectionDetailsPersonDetailFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.collections.presentation.details.add.ui.AddLocationFragment" android:id="@id/collectionDetailsAddLocationFragment">
+        <action android:id="@id/add_location_map" app:destination="@id/collectionDetailsAddLocationMapFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.collections.presentation.details.add.ui.AddLocationMapFragment" android:id="@id/collectionDetailsAddLocationMapFragment" />
+    <fragment android:name="com.mark43.feature.collections.presentation.details.ui.LocationMapFragment" android:id="@id/collectionDetailsViewLocationMapFragment" />
+    <fragment android:name="com.mark43.feature.collections.presentation.details.ui.AttachmentImageFragment" android:id="@id/collectionDetailsImageViewer" />
+    <fragment android:name="com.mark43.feature.collections.presentation.details.ui.PersonImageFragment" android:id="@id/personImageViewer" />
+    <fragment android:name="com.mark43.feature.collections.presentation.details.ui.AttachmentVideoPlayerFragment" android:id="@id/collectionDetailsVideoPlayer" />
+    <fragment android:name="com.mark43.feature.collections.presentation.details.ui.PersonDetailFragment" android:id="@id/collectionDetailsPersonDetailFragment">
+        <action android:id="@id/view_person_image" app:destination="@id/personImageViewer" />
+    </fragment>
+    <activity android:name="com.mark43.feature.collections.presentation.details.add.ui.CameraActivity" android:id="@id/collectionCameraActivity" />
+    <fragment android:name="com.mark43.feature.collections.presentation.details.add.ui.AddPersonDetailFragment" android:id="@id/collectionDetailsAddPersonDetailFragment">
+        <action android:id="@id/view_add_person_image" app:destination="@id/personImageViewer" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.collections.presentation.details.add.ui.AddPersonSearchFragment" android:id="@id/collectionDetailsAddPersonSearchFragment">
+        <action android:id="@id/add_person_detail" app:destination="@id/collectionDetailsAddPersonDetailFragment" />
+        <action android:id="@id/create_person" app:destination="@id/collectionsDetailsCreatePersonFragment" />
+    </fragment>
+    <fragment android:name="com.mark43.feature.collections.presentation.details.add.ui.CreatePersonFragment" android:id="@id/collectionsDetailsCreatePersonFragment" />
+</navigation>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <calloutStyle borderWidth="-1" cornerRadius="0" leaderLength="1000" leaderPosition="garbage" leaderWidth="30" maxHeight="garbage" maxWidth="2000" unrecognizedParameterName="ignored" />
+</resources>

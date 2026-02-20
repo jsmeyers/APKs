@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator android:duration="@integer/mb_card_flip_fade_duration" android:valueFrom="0" android:valueTo="1.0" android:propertyName="alpha" />
+    <objectAnimator android:duration="@integer/mb_card_scale_duration" android:valueFrom="1.0" android:valueTo="1.2" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/mb_card_scale_duration" android:valueFrom="1.0" android:valueTo="1.2" android:propertyName="scaleY" />
+    <objectAnimator android:duration="@integer/mb_card_scale_half_duration" android:startOffset="@integer/mb_card_scale_duration" android:valueFrom="1.2" android:valueTo="1.1" android:propertyName="scaleX" />
+    <objectAnimator android:duration="@integer/mb_card_scale_half_duration" android:startOffset="@integer/mb_card_scale_duration" android:valueFrom="1.2" android:valueTo="1.1" android:propertyName="scaleY" />
+    <objectAnimator android:interpolator="@android:interpolator/accelerate_decelerate" android:duration="@integer/mb_card_flip_rotation_duration" android:startOffset="@integer/mb_card_flip_fade_duration" android:valueFrom="0" android:valueTo="-90" android:propertyName="rotationY" />
+</set>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/background1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:title="Filter" app:titleMarginStart="0.0dip" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/content" android:background="@color/surface1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/filter_sort_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/top_separator" android:background="@color/surface3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/filter_primary_subdivision_container" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/filter_primary_subdivision_text_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/textPrimary" android:id="@id/filter_primary_subdivision" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/filter_primary_subdivision_values" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/open_right" android:contentDescription="@string/open" app:tint="@color/textPrimary" />
+                    </LinearLayout>
+                    <View android:background="@color/surface3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/filter_dispatch_area_container" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/filter_dispatch_area_text_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/textPrimary" android:id="@id/filter_dispatch_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dispatch_area" />
+                            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/filter_dispatch_area_values" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/open_right" android:contentDescription="@string/open" app:tint="@color/textPrimary" />
+                    </LinearLayout>
+                    <View android:background="@color/surface3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/filter_unit_type_container" android:background="?android:selectableItemBackground" android:padding="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/filter_unit_type_text_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/textPrimary" android:id="@id/filter_unit_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/unit_type" />
+                            <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/filter_unit_type_values" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/open_right" android:contentDescription="@string/open" app:tint="@color/textPrimary" />
+                    </LinearLayout>
+                    <View android:background="@color/surface3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/sort_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/sortby_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sort_by" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <RadioGroup android:id="@id/sort_by" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sortby_header">
+                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status" />
+                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/dispatch_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dispatch_area" />
+                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/time_in_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_in_status" />
+                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/primary_subdivision" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </RadioGroup>
+                        <View android:id="@id/sort_separator" android:background="@color/surface3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sort_by" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/sortorder_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/sort_order" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sort_separator" />
+                        <RadioGroup android:id="@id/sort_order" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sortorder_header">
+                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/ascending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableEnd="@drawable/arrow_down_narrow" android:drawableTint="@color/textPrimary" />
+                            <RadioButton android:textSize="14.0sp" android:textColor="@color/textPrimary" android:id="@id/descending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableEnd="@drawable/arrow_up_narrow" android:drawableTint="@color/textPrimary" />
+                        </RadioGroup>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

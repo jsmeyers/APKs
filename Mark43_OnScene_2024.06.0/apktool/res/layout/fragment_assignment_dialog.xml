@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_main" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:backgroundTint="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/dialog_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="16.0dip" app:cardCornerRadius="2.0dip" app:layout_constraintBottom_toTopOf="@id/close_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_max="wrap" app:layout_constraintHeight_percent="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" app:strokeColor="@color/colorPrimary" app:strokeWidth="1.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_title_left_aligned" android:padding="@dimen/default_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/text_title_left_aligned" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_title" android:padding="@dimen/default_spacing" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/button_previous" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_navigate_before_black_24dp" app:tint="@color/iconColor" />
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/text_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:id="@id/button_next" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_navigate_next_black_24dp" app:tint="@color/iconColor" />
+            </LinearLayout>
+            <FrameLayout android:background="@color/whisper_40" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <androidx.viewpager2.widget.ViewPager2 android:id="@id/pager" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="20.0dip" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.button.MaterialButton android:textSize="16.0sp" android:textColor="@color/textColor" android:id="@id/close_button" android:layout_width="48.0dip" android:layout_height="48.0dip" android:insetTop="0.0dip" android:insetBottom="0.0dip" android:contentDescription="@string/close_dialog" app:backgroundTint="@color/close_dialog_icon_background" app:cornerRadius="24.0dip" app:icon="@drawable/ic_close" app:iconGravity="top" app:iconTint="@color/textColor" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dialog_frame" style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView android:id="@id/styledPlayer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:surface_type="surface_view" />
+    <com.google.android.material.appbar.MaterialToolbar android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" android:id="@id/video_toolbar" android:background="@color/arc_raw_black_alpha_500" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:menu="@menu/delete_menu" />
+</FrameLayout>
