@@ -1,0 +1,40 @@
+# APKs
+
+Static analysis of Android APK/XAPK files for security review.
+
+## Tech Stack
+
+- GitHub: `jsmeyers/APKs`
+- Tools: `jadx`, `apkanalyzer`, `strings`, custom scripts
+
+## Owner
+
+John
+
+## Status
+
+- Created: 2026-02-20
+- Status: active
+
+## Roadmap
+
+- [ ] Verify `jadx` installed (`jadx --version`)
+- [ ] Create analysis script template (`scripts/analyze_apk.sh`)
+- [ ] Define report format (`report.md` schema)
+- [ ] Add samples to `samples/` for testing
+
+## Requirements
+
+- `jadx` (Java decompiler)
+- `apkanalyzer` (APK analyzer, part of Android SDK)
+- Python 3.x or Bash for scripting
+
+## Output Structure
+
+```
+projects/apks/
+├── <apk-name>/
+│   ├── report.md
+│   └── extracted/
+└── README.md (this file, aggregates findings)
+```

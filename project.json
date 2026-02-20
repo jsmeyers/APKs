@@ -1,0 +1,8 @@
+{
+  "name": "apks",
+  "owner": "John",
+  "start": "2026-02-20",
+  "status": "active",
+  "tags": ["android", "apk", "static-analysis", "security"],
+  "tech": ["jadx", "apkanalyzer", "python", "bash"]
+}
