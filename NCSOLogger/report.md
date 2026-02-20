@@ -88,6 +88,18 @@
 
 ---
 
+## External Resources (PDFs)
+
+| PDF | Purpose | URL |
+|-----|---------|-----|
+| NLC Commissioning Guide | Commissioning documentation | [nicorlighting.com](https://nicorlighting.com/NLC/NLC%20Commissioning%20Guide.pdf) |
+| FAQ-V2-Genio_EN_R02.pdf | Genio FAQ (English) | [HubSpot](https://48484441.fs1.hubspotusercontent-na1.net/hubfs/48484441/Stanpro/genio/FAQ-V2-Genio_EN_R02.pdf) |
+| FAQ-V2-Genio_FR_R02.pdf | Genio FAQ (French) | [HubSpot](https://48484441.fs1.hubspotusercontent-na1.net/hubfs/48484441/Stanpro/genio/FAQ-V2-Genio_FR_R02.pdf) |
+| FAQ - Wave_EN.pdf | Wave FAQ (English) | [Aimlite](https://www.aimlite.com/hubfs/Aimlite/Aimlite%20assets/PDFs/Brochures%20EN/FAQ%20-%20Wave_EN.pdf) |
+| FAQ - Wave_FR.pdf | Wave FAQ (French) | [Aimlite](https://www.aimlite.com/hubfs/Aimlite/Aimlite%20assets/PDFs/Brochures%20FR/FAQ%20-%20Wave_FR.pdf) |
+
+---
+
 ## QR Code Hierarchy
 
 **Images:** 3 QR code generation steps captured in screenshots (forwarded from John, 2026-02-17)
