@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#50000000" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dp_16" android:paddingEnd="@dimen/dp_16"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/line_top_left" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/imageView0" android:background="@drawable/ic_tip_left" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tip0" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/line_top_center" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/imageView1" android:background="@drawable/ic_tip_center_top" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tip1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/line_top_right" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/imageView2" android:background="@drawable/ic_tip_right" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tip2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/line_top_left2" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_below="@id/line_top_left" android:paddingStart="@dimen/dp_16" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/imageView3" android:background="@drawable/ic_tip_left" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tip3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/line_top_right2" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_below="@id/line_top_right" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:id="@id/tip4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="TextView" />
+            <ImageView android:id="@id/imageView4" android:background="@drawable/ic_tip_left_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/line_center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/dp_5" android:layout_weight="1.0" android:layout_below="@id/line_top_left2">
+        <TextView android:id="@id/tip5" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip6" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip7" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip8" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip9" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip10" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip11" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip12" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+        <TextView android:id="@id/tip13" android:visibility="gone" android:text="TextView" style="@style/style_tip_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/line_bottom" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dp_30" android:paddingEnd="@dimen/dp_30">
+        <ImageView android:id="@id/imageView14" android:background="@drawable/ic_tip_center_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tip14" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="74.0dip" android:text="TextView" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tip15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        <ImageView android:id="@id/imageView15" android:background="@drawable/ic_tip_center_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="44.0dip" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tip16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        <ImageView android:id="@id/imageView16" android:background="@drawable/ic_tip_center_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

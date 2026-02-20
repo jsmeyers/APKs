@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/in_top" layout="@layout/top_title_layout" />
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_dh" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/in_top">
+        <RadioButton android:textSize="@dimen/sp_15" android:textColor="@color/color_scene_btn_text_selector" android:gravity="center" android:id="@id/rb_soft" android:background="@drawable/selector_scene" android:layout_width="0.0dip" android:layout_height="48.0dip" android:button="@null" android:text="@string/dh_set_soft" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10" />
+        <RadioButton android:textSize="@dimen/sp_15" android:textColor="@color/color_scene_btn_text_selector" android:gravity="center" android:id="@id/rb_mild" android:background="@drawable/selector_scene" android:layout_width="0.0dip" android:layout_height="48.0dip" android:button="@null" android:text="@string/dh_set_mid" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10" />
+        <RadioButton android:textSize="@dimen/sp_15" android:textColor="@color/color_scene_btn_text_selector" android:gravity="center" android:id="@id/rb_aggressive" android:background="@drawable/selector_scene" android:layout_width="0.0dip" android:layout_height="48.0dip" android:checked="true" android:button="@null" android:text="@string/dh_set_aggressive" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10" />
+        <RadioButton android:textSize="@dimen/sp_15" android:textColor="@color/color_scene_btn_text_selector" android:gravity="center" android:id="@id/rb_custom" android:background="@drawable/selector_scene" android:layout_width="0.0dip" android:layout_height="48.0dip" android:button="@null" android:text="@string/dh_set_custom" android:layout_weight="1.0" />
+    </RadioGroup>
+    <RelativeLayout android:gravity="center" android:id="@id/rl_fixedValue" android:padding="@dimen/dp_20" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="65.0dip" android:layout_below="@id/rg_dh">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_30" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dh_min_dim" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_dhDim" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dh_delay_time" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_dhDelayTime" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/dp_30" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dh_speed" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_dhSpeed" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/rl_custom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="65.0dip" android:layout_below="@id/rg_dh" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dh_min_dim" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="?custom_attr_app_sensor_picker_bg_color" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="0.0dip" android:layout_height="130.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5" android:layout_weight="1.2">
+                <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_dh_minDim" android:layout_width="fill_parent" android:layout_height="wrap_content" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dh_delay_time" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="?custom_attr_app_sensor_picker_bg_color" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="0.0dip" android:layout_height="130.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5" android:layout_weight="1.2">
+                <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_dhDelayTime" android:layout_width="fill_parent" android:layout_height="wrap_content" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_30" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dh_speed" android:layout_weight="1.0" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="?custom_attr_app_sensor_picker_bg_color" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="0.0dip" android:layout_height="130.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5" android:layout_weight="1.2">
+                <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_dhSpeed" android:layout_width="fill_parent" android:layout_height="wrap_content" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/sp_15" android:textColor="?custom_attr_app_group_name_text_color" android:gravity="center" android:id="@id/btn_dhSend" android:background="@drawable/shape_name_bg_pressed" android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_marginBottom="@dimen/dp_15" android:text="@string/Factory_send" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

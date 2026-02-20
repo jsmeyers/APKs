@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/device_head" layout="@layout/top_title_layout" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/no_light_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/no_light" app:tint="?custom_attr_app_no_device_image_tint_color" />
+            <TextView android:textSize="14.0sp" android:textColor="?custom_attr_app_no_device_detailtext_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/no_light" android:paddingStart="@dimen/padding_normal" android:paddingEnd="@dimen/padding_normal" />
+            <Button android:id="@id/btn_scan" android:text="@string/scan_lamp_now" style="@style/Click_To_Add_Style" />
+        </LinearLayout>
+        <com.litetrace.bluetooth.light.widget.MyRecyclerView android:id="@id/rv_lamps" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:id="@id/rl_delete" android:background="?custom_attr_app_nearlamp_toolbar_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_allselect_btn_title_color" android:id="@id/cb_allChoose" android:padding="5.0dip" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:text="@string/all_select" android:drawablePadding="@dimen/dp_5" android:layout_centerVertical="true" android:drawableStart="@drawable/selector_check_button_circle" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_5" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_main_color" android:id="@id/tv_checkCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/cb_allChoose" />
+            <Button android:id="@id/btn_deleteAll" android:text="@string/delete" android:paddingStart="@dimen/dp_15" android:paddingEnd="@dimen/dp_15" android:layout_marginEnd="@dimen/dp_15" android:layout_alignParentEnd="true" style="@style/style_btn_save" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

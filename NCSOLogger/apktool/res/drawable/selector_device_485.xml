@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="?custom_attr_app_485device_bg_selected_color" />
+                    <corners android:radius="15.0dip" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:src="@drawable/ic_485device_selected" android:tint="?custom_attr_app_485device_image_highlight_tint_color" />
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="?custom_attr_app_485device_bg_selected_color" />
+                    <corners android:radius="15.0dip" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:src="@drawable/ic_485device_selected" android:tint="?custom_attr_app_485device_image_highlight_tint_color" />
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="?custom_attr_app_485device_bg_color" />
+                    <corners android:radius="15.0dip" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:src="@drawable/ic_485device_selected" android:tint="?custom_attr_app_485device_image_tint_color" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

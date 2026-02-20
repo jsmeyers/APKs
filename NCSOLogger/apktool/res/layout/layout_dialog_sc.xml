@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/picker_bri" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/light_white" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="@dimen/dp_5">
+                <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_scBri" android:layout_width="fill_parent" android:layout_height="fill_parent" app:npv_DividerColor="@color/grey" app:npv_DividerHeight="@dimen/dp_0.5" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_RespondChangeInMainThread="false" app:npv_ShowCount="5" app:npv_TextArray="@array/auto_calibration_bri_num" app:npv_TextColorHint="#ffbcbcbc" app:npv_TextColorNormal="@color/blue" app:npv_TextColorSelected="@color/theme_color" app:npv_TextSizeNormal="@dimen/sp_14" app:npv_TextSizeSelected="@dimen/sp_16" app:npv_WrapSelectorWheel="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_scColor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_30">
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/timer_sc_color" />
+            <LinearLayout android:orientation="vertical" android:background="@color/light_white" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginTop="@dimen/dp_5">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="end|center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:text="@string/cct_warm" />
+                <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_scColor" android:layout_width="fill_parent" android:layout_height="90.0dip" app:npv_DividerColor="@color/grey" app:npv_DividerHeight="@dimen/dp_0.5" app:npv_ItemPaddingHorizontal="2.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_RespondChangeInMainThread="false" app:npv_ShowCount="3" app:npv_TextArray="@array/auto_calibration_bri_num" app:npv_TextColorHint="#ffbcbcbc" app:npv_TextColorNormal="@color/blue" app:npv_TextColorSelected="@color/theme_color" app:npv_TextSizeNormal="@dimen/sp_14" app:npv_TextSizeSelected="@dimen/sp_16" app:npv_WrapSelectorWheel="false" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="end|center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:text="@string/cct_cool" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textSize="@dimen/sp_16" android:textColor="@color/color_radiobtn_selector" android:gravity="center" android:id="@id/btn_scOk" android:background="@drawable/edit_box_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/confirm" />
+</LinearLayout>

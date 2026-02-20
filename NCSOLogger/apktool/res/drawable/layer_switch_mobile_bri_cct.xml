@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:scaleType="fitCenter" android:height="18.799988dip" android:width="18.799988dip" android:drawable="@drawable/selector_ic_switch_mobile_cct" />
+</layer-list>

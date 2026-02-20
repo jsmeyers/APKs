@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_switch" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="230.0dip" android:layout_height="230.0dip" android:layout_centerHorizontal="true">
+        <RelativeLayout android:background="@drawable/layer_switch_touch4_bg" android:padding="@dimen/dp_1" android:layout_width="230.0dip" android:layout_height="230.0dip" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:id="@id/line_touch_1" android:background="@drawable/switch_mobile_left_top_btn_bg" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                <TextView android:id="@id/touch_1" style="@style/style_tv_panel_gold_top_key_scene" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/line_touch_2" android:background="@drawable/switch_mobile_left_bottom_btn_bg" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_below="@id/line_touch_1">
+                <TextView android:id="@id/touch_2" style="@style/style_tv_panel_gold_bottom_key_scene" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/line_touch_4" android:background="@drawable/switch_mobile_right_top_btn_bg" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_toEndOf="@id/line_touch_1">
+                <TextView android:id="@id/touch_4" style="@style/style_tv_panel_gold_top_key_scene" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/line_touch_3" android:background="@drawable/switch_mobile_right_bottom_btn_bg" android:layout_width="115.0dip" android:layout_height="115.0dip" android:layout_below="@id/line_touch_4" android:layout_toEndOf="@id/line_touch_2">
+                <TextView android:id="@id/touch_3" style="@style/style_tv_panel_gold_bottom_key_scene" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/line_power_button" android:background="@drawable/switch_powerbtn_bg" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/arrow_left" android:layout_width="20.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_switch_embeded_arrow_left" android:scaleType="fitCenter" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="0.0dip" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/arrow_right" android:layout_width="20.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_switch_embeded_arrow_right" android:scaleType="fitCenter" android:layout_centerVertical="true" android:paddingStart="0.0dip" android:paddingEnd="@dimen/dp_10" android:layout_alignParentEnd="true" />
+            <TextView android:id="@id/power_button" android:background="@color/transparent" android:drawableBottom="@drawable/layer_switch_mobile_bri_power" android:layout_centerInParent="true" style="@style/style_tv_panel_gold_key" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

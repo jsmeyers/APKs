@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@mipmap/ic_switch_five_bri_down_2_pressed" android:tint="?custom_attr_app_switch_comment_btn_image_highlight_tint_color" />
+    </item>
+    <item>
+        <bitmap android:src="@mipmap/ic_switch_five_bri_down_2_normal" android:tint="?custom_attr_app_switch_comment_btn_image_tint_color" />
+    </item>
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap android:src="@drawable/rotation_3_pressed" android:tint="?custom_attr_app_switch_comment_btn_hightlight_bg_color" />
+    </item>
+    <item>
+        <bitmap android:src="@drawable/rotation_3_normal" android:tint="?custom_attr_app_switch_comment_btn_bg_color" />
+    </item>
+</selector>

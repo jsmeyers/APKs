@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval" android:useLevel="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?custom_attr_app_dimming_type_unselect_bg_color" />
+    <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_dimming_type_unselect_stroke_color" />
+</shape>

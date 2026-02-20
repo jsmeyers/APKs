@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_scene" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/item_iv_scene" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/dp_5" android:src="@drawable/icon_scene_all_on_normal" android:layout_centerHorizontal="true" app:tint="@color/selector_scene_top_button_tint" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/selector_scene_btn_text_color" android:id="@id/item_tv_status_desc" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:text="@string/scene_str_all_on" android:singleLine="true" android:layout_below="@id/item_iv_scene" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/scene_delete_tag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_check_button_circle" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

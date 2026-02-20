@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/device_head" layout="@layout/top_title_layout" />
+    <ImageView android:id="@id/iv_no_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_20" android:src="@mipmap/no_device" android:layout_centerInParent="true" app:tint="?custom_attr_app_no_device_image_tint_color" />
+    <TextView android:textSize="14.0sp" android:textColor="?custom_attr_app_no_device_detailtext_color" android:gravity="center" android:id="@id/tv_no_device_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_device" android:layout_below="@id/iv_no_device" android:layout_centerHorizontal="true" android:paddingStart="@dimen/padding_normal" android:paddingEnd="@dimen/padding_normal" />
+    <Button android:textColor="?custom_attr_app_no_device_text_color" android:id="@id/btn_scan" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scan_device_now" android:layout_below="@id/tv_no_device_tips" android:layout_centerHorizontal="true" />
+</RelativeLayout>

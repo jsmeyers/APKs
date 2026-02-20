@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/top_title_layout" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:id="@id/tv_helpTips" android:padding="@dimen/dp_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" />
+    <TextView android:textSize="@dimen/sp_14" android:textColorLink="@color/text_light_color" android:autoLink="phone" android:id="@id/tv_helpTel" android:padding="@dimen/dp_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" />
+    <TextView android:textSize="@dimen/sp_14" android:textColorLink="@color/text_light_color" android:autoLink="email" android:id="@id/tv_helpEmail" android:padding="@dimen/dp_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" />
+    <TextView android:textSize="@dimen/sp_14" android:textColorLink="@color/text_light_color" android:autoLink="web" android:id="@id/tv_helpWeb" android:padding="@dimen/dp_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_5" />
+</LinearLayout>

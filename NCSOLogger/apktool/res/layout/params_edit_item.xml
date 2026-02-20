@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_prs_edit" android:background="?custom_attr_app_params_edit_item_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/params_edit_head" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingStart="@dimen/dp_8" android:paddingEnd="@dimen/dp_8">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_params_edit_item_title_color" android:gravity="start" android:id="@id/prs_edit_name" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="8.0" android:layout_marginEnd="@dimen/dp_20" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_params_edit_item_value_text_color" android:gravity="center" android:id="@id/prs_current_value" android:background="@color/transparent" android:layout_width="46.0dip" android:layout_height="wrap_content" android:text="Not set" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/prs_edit_content" android:paddingBottom="@dimen/dp_8" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_8">
+        <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/prs_picker_values" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_8" android:layout_centerHorizontal="true" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="3" app:npv_TextColorSelected="?custom_attr_app_params_edit_item_value_text_color" style="@style/style_number_picker" />
+        <Button android:textColor="?custom_attr_app_params_edit_item_btn_text_color" android:id="@id/prs_btn_send" android:background="@drawable/shape_params_edit_sendbtn_bg" android:layout_width="66.0dip" android:layout_height="33.0dip" android:text="@string/Factory_send" android:layout_below="@id/prs_picker_values" android:layout_marginEnd="@dimen/dp_8" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

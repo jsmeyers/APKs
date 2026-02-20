@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_iv_type" android:background="@drawable/gray_bg" android:padding="@dimen/dp_5" android:layout_width="44.0dip" android:layout_height="40.0dip">
+        <ImageView android:id="@id/iv_type" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_lamp_color" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_lampState" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/lamp_offline_orange" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_lampAuto" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_lamp_auto" android:layout_centerInParent="true" app:tint="?custom_attr_app_lamp_icon_tintcolor" />
+        <com.litetrace.bluetooth.light.widget.HorizontalProgressBar android:id="@id/progress_test" android:visibility="invisible" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_1" app:hpb_animDuration="500" app:hpb_backgroundColor="@color/grey" app:hpb_maxProgress="100" app:hpb_progressColor="@color/white" />
+    </RelativeLayout>
+    <TextView android:id="@id/content1" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="选择" android:layout_weight="1.8" android:layout_marginStart="-1.0dip" style="@style/style_lamp_info_text_content" />
+    <TextView android:textSize="@dimen/sp_14" android:id="@id/content2" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="1.8" android:layout_marginStart="-1.0dip" style="@style/style_lamp_info_text_content" />
+    <TextView android:textSize="@dimen/sp_14" android:id="@id/content3" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="-1.0dip" android:text="65535" android:layout_weight="1.8" style="@style/style_lamp_info_text_content" />
+    <TextView android:textSize="@dimen/sp_14" android:id="@id/content4" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="-1.0dip" android:text="选择" android:layout_weight="3.0" style="@style/style_lamp_info_text_content" />
+    <LinearLayout android:gravity="center" android:id="@id/togglePackage" android:background="@drawable/gray_bg" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="-1.0dip">
+        <ToggleButton android:id="@id/toggle" android:background="@drawable/small_toggle_btn_selector" android:focusable="false" android:layout_width="48.0dip" android:layout_height="24.0dip" android:checked="false" android:textOn="" android:textOff="" android:text="" />
+    </LinearLayout>
+</LinearLayout>

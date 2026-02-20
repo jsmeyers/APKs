@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_rssi_level" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginBottom="-15.0dip" android:src="@drawable/level_rssi_by_layer" android:layout_marginStart="36.0dip" />
+    <RelativeLayout android:id="@id/rl_content" android:layout_width="@dimen/size_lampType" android:layout_height="@dimen/size_lampType" android:layout_marginBottom="@dimen/dp_5">
+        <ImageView android:id="@id/iv_lampType" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_lamp_color" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_lampState" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_lamp_off" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_lampAuto" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_lamp_auto" android:layout_centerHorizontal="true" app:tint="?custom_attr_app_lamp_icon_tintcolor" />
+        <CheckBox android:id="@id/check_isSelect" android:layout_width="@dimen/size_lampSelect" android:layout_height="@dimen/size_lampSelect" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" style="@style/check_button" />
+    </RelativeLayout>
+    <com.litetrace.bluetooth.light.widget.HorizontalProgressBar android:id="@id/progress_topBrightness" android:layout_width="@dimen/size_progress_width" android:layout_height="@dimen/size_progress_height_floor" app:hpb_animDuration="500" app:hpb_backgroundColor="@color/grey" app:hpb_maxProgress="100" app:hpb_progressColor="@color/white" />
+    <com.litetrace.bluetooth.light.widget.HorizontalProgressBar android:id="@id/progress_bottomBrightness" android:layout_width="@dimen/size_progress_width" android:layout_height="@dimen/size_progress_height_floor" android:layout_marginTop="1.0dip" app:hpb_animDuration="500" app:hpb_backgroundColor="@color/grey" app:hpb_maxProgress="100" app:hpb_progressColor="@color/white" />
+    <com.litetrace.bluetooth.light.widget.HorizontalProgressBar android:id="@id/progress_brightness" android:visibility="gone" android:layout_width="@dimen/size_progress_width" android:layout_height="8.0dip" android:layout_marginTop="2.0dip" app:hpb_animDuration="500" app:hpb_backgroundColor="@color/grey" app:hpb_maxProgress="100" app:hpb_progressColor="@color/white" />
+    <TextView android:textSize="14.0sp" android:textColor="?custom_attr_app_lamp_title_color" android:gravity="center" android:id="@id/tv_lampName" android:layout_width="@dimen/size_progress_width" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:text="灯具名称" android:singleLine="true" />
+</LinearLayout>

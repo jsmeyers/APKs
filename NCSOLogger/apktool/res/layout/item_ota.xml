@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_item" android:background="@color/white" android:paddingLeft="@dimen/dp_15" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_15" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/check_isSelect" android:layout_width="@dimen/size_lampSelect" android:layout_height="@dimen/size_lampSelect" android:button="@drawable/selector_check_lamp" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/rl_lampType" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_12" android:layout_toEndOf="@id/check_isSelect">
+        <ImageView android:id="@id/img_lamp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_lamp_color" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_lampState" android:layout_width="@dimen/size_lampState" android:layout_height="@dimen/size_lampState" android:src="@mipmap/ic_lamp_temperature" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/img_update" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_ota" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/img_update" android:layout_toRightOf="@id/rl_lampType" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="灯具名称" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/grey" android:id="@id/tv_versionVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:text="1.0" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/grey" android:id="@id/tv_versionNow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" android:text="1.0" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/grey" android:id="@id/tv_versionNew" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2.0" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/light_grey" android:id="@id/tv_rssi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="-80 db" />
+    </LinearLayout>
+</RelativeLayout>

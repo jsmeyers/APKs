@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="?custom_attr_app_lampif_header_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/head1" android:layout_width="44.0dip" android:layout_height="32.0dip" android:text="灯具" style="@style/style_text_head" />
+    <TextView android:id="@id/head2" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginLeft="-1.0dip" android:text="选择" android:layout_weight="1.8" style="@style/style_text_head" />
+    <TextView android:id="@id/head3" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginLeft="-1.0dip" android:text="选择" android:layout_weight="1.8" style="@style/style_text_head" />
+    <TextView android:id="@id/head4" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginLeft="-1.0dip" android:text="灯具选择" android:layout_weight="1.8" style="@style/style_text_head" />
+    <TextView android:id="@id/head5" android:layout_width="0.0dip" android:layout_height="32.0dip" android:layout_marginLeft="-1.0dip" android:text="选择" android:layout_weight="3.0" style="@style/style_text_head" />
+    <TextView android:id="@id/head6" android:layout_width="58.0dip" android:layout_height="32.0dip" android:layout_marginLeft="-1.0dip" android:text="选择" style="@style/style_text_head" />
+</LinearLayout>

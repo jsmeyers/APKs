@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_title_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@mipmap/bg_share_app" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_share_android" android:layout_width="160.0dip" android:layout_height="160.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:id="@id/tv_share_android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_46" android:text="@string/share_app_android" />
+        <ImageView android:id="@id/iv_share_ios" android:layout_width="160.0dip" android:layout_height="160.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:id="@id/tv_share_ios" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/share_app_ios" />
+    </LinearLayout>
+</LinearLayout>

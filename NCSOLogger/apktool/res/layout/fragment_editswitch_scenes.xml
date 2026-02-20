@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:background="?custom_attr_app_content_bg_color" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_esSelectScenes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5" android:text="@string/select_scene" android:layout_marginStart="@dimen/dp_18" />
+        <com.litetrace.bluetooth.light.widget.TagFlowLayout android:id="@id/tagFlow_scenes" android:paddingLeft="@dimen/dp_18" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_18" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_esSelectPF" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_5" android:text="@string/preset_function" android:layout_marginStart="@dimen/dp_18" />
+        <com.litetrace.bluetooth.light.widget.TagFlowLayout android:id="@id/tagFlow_preset_function" android:paddingLeft="@dimen/dp_18" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_18" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

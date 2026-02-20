@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <size android:height="100.0dip" android:width="90.0dip" />
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="?custom_attr_app_switch_comment_btn_hightlight_bg_color" />
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_comment_btn_selected_stroke_color" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <size android:height="100.0dip" android:width="90.0dip" />
+            <corners android:radius="@dimen/dp_5" />
+            <solid android:color="?custom_attr_app_switch_comment_btn_bg_color" />
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_comment_btn_stroke_color" />
+        </shape>
+    </item>
+</selector>

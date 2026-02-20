@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:scaleType="fitCenter" android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip">
+        <shape>
+            <size android:height="206.0dip" android:width="206.0dip" />
+            <solid android:color="?custom_attr_app_device_scan_stroke_color" />
+            <corners android:radius="103.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="20.0dip" android:top="20.0dip" android:right="20.0dip" android:bottom="20.0dip">
+        <shape>
+            <corners android:radius="100.0dip" />
+            <solid android:color="?custom_attr_app_device_scan_solid_color" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="20.0dip" android:top="102.5dip" android:right="20.0dip" android:bottom="102.5dip">
+        <shape>
+            <solid android:color="?custom_attr_app_device_scan_gridline_color" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="102.5dip" android:top="20.0dip" android:right="102.5dip" android:bottom="20.0dip">
+        <shape>
+            <solid android:color="?custom_attr_app_device_scan_gridline_color" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="50.0dip" android:top="50.0dip" android:right="50.0dip" android:bottom="50.0dip">
+        <shape>
+            <corners android:radius="100.0dip" />
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_device_scan_gridline_color" />
+            <solid android:color="@color/transparent" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:left="80.0dip" android:top="80.0dip" android:right="80.0dip" android:bottom="80.0dip">
+        <shape>
+            <corners android:radius="100.0dip" />
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_device_scan_gridline_color" />
+            <solid android:color="@color/transparent" />
+        </shape>
+    </item>
+</layer-list>

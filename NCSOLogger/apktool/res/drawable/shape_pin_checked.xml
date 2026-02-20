@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="?custom_attr_app_qrcode_cell_image_tint_color" />
+        </shape>
+    </item>
+    <item android:left="3.0dip">
+        <shape>
+            <solid android:color="?custom_attr_app_qrcode_cell_bg_color" />
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_qrcode_cell_image_tint_color" />
+            <padding android:left="3.0dip" />
+        </shape>
+    </item>
+</layer-list>

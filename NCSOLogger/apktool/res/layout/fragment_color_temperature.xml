@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?custom_attr_setting_content_bg_color" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:id="@id/light_name" android:layout_marginTop="@dimen/dp_10" style="@style/style_timer_title" />
+        <TextView android:id="@id/light_ratedPower" android:layout_width="80.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" style="@style/style_timer_title" />
+    </RelativeLayout>
+    <com.litetrace.bluetooth.light.widget.CircleView android:id="@id/light_selected_color" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_top" app:roundColor="@color/theme_color" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_dimming_preview_tips_text_color" android:gravity="center" android:id="@id/temperature_light_sat" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/light_selected_color" android:layout_marginEnd="@dimen/dp_20" android:layout_alignStart="@id/light_selected_color" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/light_selected_color" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_20" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toLeftOf="parent">
+        <include layout="@layout/dimming_view_sensor_btns_layout" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:id="@id/center_layout_id" android:paddingLeft="@dimen/dp_15" android:layout_width="100.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/margin_small" android:weightSum="1.0" app:layout_constraintBottom_toTopOf="@id/bottom" app:layout_constraintRight_toLeftOf="@id/temperature_layout" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/rl_top">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_dimming_slidebar_right_text_color" android:id="@id/temperature_light_bri" android:layout_width="46.0dip" android:layout_height="wrap_content" android:text="100%" />
+        <com.litetrace.bluetooth.light.widget.VerticalColorSeekBar android:id="@id/lamp_seekbar_brightness" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="24.0dip" android:layout_height="0.0dip" android:layout_weight="0.7" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" app:thumbDrawable="@drawable/seekbar_thumb" app:thumbRadius="@dimen/dp_12" />
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="?custom_attr_app_dimming_slidebar_left_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/light_brightness" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/temperature_layout" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_56" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/one" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <View android:id="@id/temperature100" android:background="@drawable/shape_temperature_bg_pressed5" android:layout_width="80.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="5000K" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/temperature45layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_20">
+            <View android:id="@id/temperature45" android:background="@drawable/shape_temperature_bg_pressed4" android:layout_width="80.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="4500K" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/temperature40layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_20">
+            <View android:id="@id/temperature40" android:background="@drawable/shape_temperature_bg_pressed3" android:layout_width="80.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="4000K" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/temperature35layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_20">
+            <View android:id="@id/temperature35" android:background="@drawable/shape_temperature_bg_pressed2" android:layout_width="80.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="3500K" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/temperature30layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_20">
+            <View android:id="@id/temperature30" android:background="@drawable/shape_temperature_bg_pressed" android:layout_width="80.0dip" android:layout_height="40.0dip" />
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="32.0dip" android:text="3000K" android:layout_marginStart="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

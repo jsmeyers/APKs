@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <bitmap android:src="@mipmap/ic_switch_setting_pressed" android:tint="?custom_attr_app_switch_cell_setting_select_tint_color" />
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <bitmap android:src="@mipmap/ic_switch_setting_normal" android:tint="?custom_attr_app_switch_cell_setting_tint_color" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

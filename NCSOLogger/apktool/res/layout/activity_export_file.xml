@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_title_layout" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="@dimen/dp_15">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/em_code_name" android:layout_weight="2.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/tv_checkCodeName" android:background="@drawable/edit_box_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:hint="@string/em_select_zone_tips" android:layout_weight="5.0" android:layout_marginStart="@dimen/dp_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="@dimen/dp_15">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/em_building_type" android:layout_weight="2.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/tv_buildingType" android:background="@drawable/edit_box_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:hint="@string/em_select_type_tips" android:layout_weight="5.0" android:layout_marginStart="@dimen/dp_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="@dimen/dp_15">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/em_begin_date" android:layout_weight="2.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/tv_startTime" android:background="@drawable/edit_box_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:hint="@string/em_start_date_tips" android:layout_weight="5.0" android:layout_marginStart="@dimen/dp_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="@dimen/dp_15">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/em_end_date" android:layout_weight="2.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/tv_endTime" android:background="@drawable/edit_box_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:hint="@string/em_end_date_tips" android:layout_weight="5.0" android:layout_marginStart="@dimen/dp_5" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="@dimen/dp_15">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/dark_grey" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/total_area" android:layout_weight="4.0" />
+        <EditText android:textSize="@dimen/sp_13" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/et_area" android:background="@drawable/edit_box_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:hint="@string/area_tips" android:maxLines="1" android:layout_weight="7.0" android:inputType="number" android:layout_marginStart="@dimen/dp_5" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/dark_grey" android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/square_feet" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_20">
+        <Button android:textSize="14.0sp" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/btn_export" android:background="@drawable/edit_box_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/export_file" android:layout_marginStart="@dimen/dp_46" android:layout_marginEnd="@dimen/dp_46" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/dark_grey" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_36" android:layout_marginTop="@dimen/dp_5" android:text="@string/em_export_file_tips" />
+    </LinearLayout>
+</LinearLayout>

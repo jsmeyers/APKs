@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:circle="http://schemas.android.com/apk/res-auto" xmlns:seekarc="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/top_title_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="?custom_attr_app_sensor_picker_bg_color" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/picker_minlevel" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_SelectorBackGround="true" app:npv_ShowCount="5" app:npv_TextArray="@array/minLevel_array" app:npv_unit="%" style="@style/style_number_picker" />
+    </LinearLayout>
+    <Button android:id="@id/btn_save" android:layout_marginTop="@dimen/dp_20" android:layout_marginBottom="@dimen/dp_36" android:text="@string/save_min_level" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" style="@style/style_btn_save" />
+    <TextView android:textColor="@color/theme_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:text="@string/save_linkage_des" android:layout_above="@id/btn_save" android:paddingStart="@dimen/dp_20" android:paddingEnd="@dimen/dp_20" />
+</RelativeLayout>

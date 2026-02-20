@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="1">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:left="1.0dip" android:top="13.0dip" android:right="13.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_4" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="5.0dip" android:top="9.0dip" android:right="9.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_normal_color" />
+                    <size android:height="@dimen/dp_6" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="9.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_normal_color" />
+                    <size android:height="@dimen/dp_12" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="13.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_normal_color" />
+                    <size android:height="@dimen/dp_16" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="2">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:left="1.0dip" android:top="13.0dip" android:right="13.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_4" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="5.0dip" android:top="9.0dip" android:right="9.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_6" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="9.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_normal_color" />
+                    <size android:height="@dimen/dp_12" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="13.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_normal_color" />
+                    <size android:height="@dimen/dp_16" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="3">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:left="1.0dip" android:top="13.0dip" android:right="13.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_4" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="5.0dip" android:top="9.0dip" android:right="9.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_6" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="9.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_12" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="13.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_normal_color" />
+                    <size android:height="@dimen/dp_16" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:maxLevel="4">
+        <layer-list
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:left="1.0dip" android:top="13.0dip" android:right="13.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_4" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="5.0dip" android:top="9.0dip" android:right="9.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_6" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="9.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_12" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+            <item android:left="13.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+                <shape android:shape="rectangle">
+                    <solid android:color="?custom_attr_app_main_color" />
+                    <size android:height="@dimen/dp_16" android:width="@dimen/dp_2" />
+                    <corners android:radius="5.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</level-list>

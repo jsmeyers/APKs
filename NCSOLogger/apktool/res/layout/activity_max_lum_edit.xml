@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/light_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_title_layout" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tablayout_id_show" app:tabGravity="fill" app:tabIndicatorColor="@color/theme_color" app:tabMode="fixed" style="@style/style_tabLayout" />
+    <com.litetrace.bluetooth.light.widget.NoScrollViewPager android:id="@id/vp_id_show" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_10" />
+</LinearLayout>

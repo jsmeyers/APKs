@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/dp_0.5" android:color="?custom_attr_app_lampif_header_seperator_color" />
+    <solid android:color="?custom_attr_app_lampif_header_bg_color" />
+</shape>

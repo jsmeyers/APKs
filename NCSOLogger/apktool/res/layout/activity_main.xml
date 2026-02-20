@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tabs" android:background="?custom_attr_app_tabbar_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/tab_devices" android:checked="true" android:text="@string/radio_lamp" android:drawableTop="@drawable/tab_device" style="@style/radio_button_style" />
+        <RadioButton android:id="@id/tab_groups" android:text="@string/radio_group" android:drawableTop="@drawable/tab_group" style="@style/radio_button_style" />
+        <RadioButton android:id="@id/tab_switches" android:text="@string/radio_switch" android:drawableTop="@drawable/tab_switch" style="@style/radio_button_style" />
+        <RadioButton android:id="@id/tab_scenes" android:text="@string/radio_scene" android:drawableTop="@drawable/tab_scene" style="@style/radio_button_style" />
+        <RadioButton android:id="@id/tab_system" android:text="@string/radio_more" android:drawableTop="@drawable/tab_more" style="@style/radio_button_style" />
+    </RadioGroup>
+</LinearLayout>

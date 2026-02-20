@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="?custom_attr_app_params_item_bg_color" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_params_item_name_text_color" android:gravity="start" android:id="@id/prs_tv_name" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="名称" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" style="@style/style_params_textView" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/rg_group" android:layout_width="@dimen/dp_100" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <RadioButton android:textColor="@color/white" android:gravity="center" android:id="@id/rb_on" android:background="@drawable/selector_circle_on_off" android:layout_width="@dimen/size_lampSelect" android:layout_height="@dimen/size_lampSelect" android:checked="false" android:button="@null" android:text="@string/app_setting_on" />
+            <RadioButton android:textColor="@color/white" android:gravity="center" android:id="@id/rb_off" android:background="@drawable/selector_circle_on_off" android:layout_width="@dimen/size_lampSelect" android:layout_height="@dimen/size_lampSelect" android:checked="true" android:button="@null" android:text="@string/app_setting_off" android:layout_marginStart="@dimen/dp_10" />
+        </RadioGroup>
+        <Button android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@id/btn_disable" android:background="@drawable/btn_disable_bg" android:focusable="false" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="@dimen/dp_36" android:checked="false" android:text="@string/btn_disable_ble" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/touch_area" android:background="?custom_attr_app_params_item_bg_color" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.75">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?custom_attr_app_lampif_content_name_color" android:id="@id/prs_tv_pwmfreq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="pwmfreq" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/style_params_textView" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?custom_attr_app_lampif_content_name_color" android:id="@id/prs_tv_topTrim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="topTrim" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/style_params_textView" />
+                <TextView android:textColor="?custom_attr_app_lampif_content_name_color" android:id="@id/prs_tv_bottomTrim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="bottomTrim" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/style_params_textView" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="?custom_attr_app_lampif_content_name_color" android:id="@id/prs_tv_minAuto" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="minAuto" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/style_params_textView" />
+                <TextView android:textColor="?custom_attr_app_lampif_content_name_color" android:id="@id/prs_tv_fadeTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="fadeTime" android:layout_weight="1.0" android:layout_marginStart="10.0dip" style="@style/style_params_textView" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl_params_go_to" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_system_into" android:layout_centerInParent="true" app:tint="?custom_attr_app_params_item_arrow_tint_color" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="?custom_attr_app_params_item_seprator_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/dp_2" android:layout_marginStart="@dimen/dp_8" />
+</LinearLayout>

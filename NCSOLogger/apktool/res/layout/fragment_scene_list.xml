@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/in_top_title" android:visibility="visible" layout="@layout/top_title_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_scenes" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/sl_scenes" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/dp_15" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_defaultScene" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/rl_scene1" android:background="@drawable/selector_scene" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_scene1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/dp_5" android:src="@drawable/selector_icon_scene_all_on" android:layout_centerHorizontal="true" app:tint="?custom_attr_app_scene_button_selected_tint_res" />
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_scene_btn_text_selector" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:text="@string/scene_str_all_on" android:singleLine="true" android:layout_below="@id/iv_scene1" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_scene2" android:background="@drawable/selector_scene" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+                        <ImageView android:id="@id/iv_scene2" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/dp_5" android:src="@drawable/selector_icon_scene_all_off" android:layout_centerHorizontal="true" app:tint="?custom_attr_app_scene_button_selected_tint_res" />
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_scene_btn_text_selector" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:text="@string/scene_str_all_off" android:singleLine="true" android:layout_below="@id/iv_scene2" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_scene3" android:background="@drawable/selector_scene" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_scene3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/dp_5" android:src="@drawable/selector_icon_scene_all_auto" android:layout_centerHorizontal="true" app:tint="?custom_attr_app_scene_button_selected_tint_res" />
+                        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/color_scene_btn_text_selector" android:id="@id/tv_sceneName3" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:text="@string/scene_str_sensor_auto" android:singleLine="true" android:layout_below="@id/iv_scene3" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:id="@id/line" android:layout_width="fill_parent" android:layout_height="@dimen/dp_15" />
+                <com.litetrace.bluetooth.light.widget.MyGridView android:id="@id/scene_newadd_gridview" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/dp_10" android:verticalSpacing="@dimen/dp_10" android:numColumns="3" android:layout_weight="1.0" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_fast_add" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="@dimen/dp_10" android:layout_marginStart="80.0dip" android:layout_marginEnd="80.0dip">
+            <Button android:textSize="@dimen/sp_14" android:textColor="@color/color_scene_btn_text_selector" android:gravity="center" android:id="@id/btn_addScene" android:background="@drawable/selector_scene" android:layout_width="180.0dip" android:layout_height="fill_parent" android:text="@string/fast_add_scenes" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_Sequences" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/dp_15" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.litetrace.bluetooth.light.widget.MyGridView android:id="@id/gv_sequences_add" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/dp_10" android:verticalSpacing="@dimen/dp_10" android:numColumns="3" android:layout_weight="1.0" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/dp_10" android:text="@string/seq_blew_tips" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

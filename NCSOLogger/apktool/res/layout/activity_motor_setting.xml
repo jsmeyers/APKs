@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_title_layout" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10">
+            <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_1_left" android:src="@drawable/motor_icon_rotation_h_left" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" style="@style/motor_imageView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.SlideBar android:id="@id/sldier_1" android:layout_width="wrap_content" android:layout_height="@dimen/motor_slider_H" android:layout_centerVertical="true" android:layout_toStartOf="@id/image_1_right" android:layout_toEndOf="@id/image_1_left" style="@style/motor_slider_style" />
+                <TextView android:id="@id/motor_value1" android:layout_below="@id/image_1_right" style="@style/motor_textView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_1_right" android:src="@drawable/motor_icon_rotation_h_right" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" style="@style/motor_imageView_style" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_2_left" android:src="@drawable/motor_icon_rotation_v_left" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" style="@style/motor_imageView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.SlideBar android:id="@id/sldier_2" android:layout_width="wrap_content" android:layout_height="@dimen/motor_slider_H" android:layout_centerInParent="true" android:layout_toStartOf="@id/image_2_right" android:layout_toEndOf="@id/image_2_left" style="@style/motor_slider_style" />
+                <TextView android:id="@id/motor_value2" android:layout_below="@id/image_2_right" style="@style/motor_textView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_2_right" android:src="@drawable/motor_icon_rotation_v_right" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" style="@style/motor_imageView_style" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_3_left" android:src="@drawable/motor_icon_down" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" style="@style/motor_imageView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.SlideBar android:id="@id/sldier_3" android:layout_width="wrap_content" android:layout_height="@dimen/motor_slider_H" android:layout_centerVertical="true" android:layout_toStartOf="@id/image_3_right" android:layout_toEndOf="@id/image_3_left" style="@style/motor_slider_style" />
+                <TextView android:id="@id/motor_value3" android:layout_below="@id/image_3_right" style="@style/motor_textView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_3_right" android:src="@drawable/motor_icon_up" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" style="@style/motor_imageView_style" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_4_left" android:src="@drawable/motor_icon_arrow_focus" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentStart="true" style="@style/motor_imageView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.SlideBar android:id="@id/sldier_4" android:layout_width="wrap_content" android:layout_height="@dimen/motor_slider_H" android:layout_centerVertical="true" android:layout_toStartOf="@id/image_4_right" android:layout_toEndOf="@id/image_4_left" style="@style/motor_slider_style" />
+                <TextView android:id="@id/motor_value4" android:layout_below="@id/image_4_right" style="@style/motor_textView_style" />
+                <com.litetrace.bluetooth.light.activity.settings.view.ImagePressView android:id="@id/image_4_right" android:src="@drawable/motor_icon_arrow_outside" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_alignParentEnd="true" style="@style/motor_imageView_style" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

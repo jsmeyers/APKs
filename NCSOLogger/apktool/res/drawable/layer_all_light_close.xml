@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:scaleType="fitCenter" android:left="0.0dip" android:top="1.5dip" android:right="0.0dip" android:bottom="1.5dip">
+        <shape>
+            <solid android:color="?custom_attr_app_all_lights_switch_close_bg_color" />
+            <corners android:radius="200.0dip" />
+        </shape>
+    </item>
+    <item android:left="30.0dip" android:top="30.0dip" android:right="30.0dip" android:bottom="30.0dip">
+        <bitmap android:src="@mipmap/ic_all_light_switch" android:tint="?custom_attr_app_all_lights_switch_noraml_color" />
+    </item>
+</layer-list>

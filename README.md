@@ -51,7 +51,22 @@ John
   - Hardcoded secrets: None
   - Analytics tracking active
 
-### [Pending]
+### NCSOLogger
+- **Date:** 2026-02-20
+- **File:** `NCSOLogger.apk` (7.5 MB XAPK)
+- **Report:** [NCSOLogger/report.md](NCSOLogger/report.md)
+- **Tech Stack:**
+  - LiteTrace SmartLight (IoT lighting control)
+  - Firebase Crashlytics
+  - ZXing (QR scanning)
+  - OkHttp, Retrofit
+- **Findings:**
+  - Decompilation: Success
+  - External services: Firebase
+  - `baseUrl`: `https://ble.litetrace.com` (hardcoded)
+  - 5 RMS API endpoints: `getdata.php`, `getemdata.php`, `version.php`, `putdata.php`, `putemdata.php`
+  - `PARAM_MESH_PASSWORD` stored in sharedprefs (weak crypto)
+  - Custom SSL pinning implemented
 
 ---
 

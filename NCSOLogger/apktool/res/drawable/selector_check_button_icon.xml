@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?custom_attr_app_group_button_press_bg_color" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?custom_attr_app_group_button_press_bg_color" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?custom_attr_app_group_holder_bg_color" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <item android:height="20.0dip" android:width="20.0dip">
+            <shape android:shape="rectangle">
+                <solid android:color="?custom_attr_app_main_color" />
+                <corners android:radius="100.0dip" />
+            </shape>
+        </item>
+        <item android:gravity="center" android:height="7.5dip" android:width="10.0dip">
+            <bitmap android:src="@mipmap/ic_light_checked" android:tint="?custom_attr_app_select_arrow_checked_color" />
+        </item>
+    </item>
+    <item>
+        <item android:height="20.0dip" android:width="20.0dip">
+            <shape android:shape="rectangle">
+                <solid android:color="?custom_attr_app_checkbtn_normal_bg_color" />
+                <corners android:radius="100.0dip" />
+            </shape>
+        </item>
+        <item android:gravity="center" android:height="7.5dip" android:width="10.0dip">
+            <bitmap android:src="@mipmap/ic_light_checked" android:tint="?custom_attr_app_select_arrow_color" />
+        </item>
+    </item>
+</selector>

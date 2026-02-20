@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_title_layout" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/no_switch_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/no_switch" app:tint="?custom_attr_app_no_device_image_tint_color" />
+        <TextView android:textSize="14.0sp" android:textColor="?custom_attr_app_no_device_detailtext_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/no_switch" android:paddingStart="@dimen/padding_normal" android:paddingEnd="@dimen/padding_normal" />
+        <Button android:id="@id/btn_scan" android:text="@string/add_switch_now" style="@style/Click_To_Add_Style" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_panels" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

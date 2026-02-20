@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_line_switch_boder" android:padding="@dimen/dp_6" android:layout_width="250.0dip" android:layout_height="180.0dip" android:layout_below="@id/btn_edit" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/switch_edit_3" android:background="@drawable/selector_ic_switch_push_3_edit" android:paddingBottom="36.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/dp_3" android:paddingEnd="@dimen/dp_3">
+            <TextView android:id="@id/editSwitchScene3" style="@style/style_tv_panel_five_key_scene" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/switch_edit_2" android:background="@drawable/selector_ic_switch_push_2_edit" android:paddingBottom="36.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/dp_3" android:paddingEnd="@dimen/dp_3" android:layout_marginStart="@dimen/dp_6" android:layout_marginEnd="@dimen/dp_6">
+            <TextView android:id="@id/editSwitchScene2" style="@style/style_tv_panel_five_key_scene" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/switch_edit_1" android:background="@drawable/selector_ic_switch_push_1_edit" android:paddingBottom="36.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/dp_3" android:paddingEnd="@dimen/dp_3">
+            <TextView android:id="@id/editSwitchScene1" style="@style/style_tv_panel_five_key_scene" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

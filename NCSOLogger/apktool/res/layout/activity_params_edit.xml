@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_title_layout" />
+    <RelativeLayout android:background="?custom_attr_app_params_edit_item_bg_color" android:padding="@dimen/dp_8" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="@dimen/dp_8">
+        <TextView android:textColor="?custom_attr_app_params_edit_item_title_color" android:id="@id/prs_edit_head_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_alignStart="@id/prs_edit_head_toggle" android:layout_alignParentStart="true" />
+        <ToggleButton android:id="@id/prs_edit_head_toggle" android:background="@drawable/small_toggle_btn_selector" android:focusable="false" android:layout_width="48.0dip" android:layout_height="24.0dip" android:checked="false" android:textOn="" android:textOff="" android:text="" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.litetrace.bluetooth.light.widget.swipe.recyclerview.SwipeMenuRecyclerView android:id="@id/rv_params_edit" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

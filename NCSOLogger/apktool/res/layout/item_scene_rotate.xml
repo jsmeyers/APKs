@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/selector_bg_rotate_scene_item" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_15" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_sceneIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_scene_1" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dp_14" android:layout_toEndOf="@id/iv_sceneIcon">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_rotate_scene_name_selector" android:id="@id/tv_sceneName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="andr" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_rotate_scene_time_selector" android:id="@id/tv_fadeTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:text="andr" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_rotate_scene_time_selector" android:id="@id/tv_durationTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" android:text="andr" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_order" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_scene_order" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_rotate_scene_circle_selector" android:gravity="center" android:id="@id/tv_index" android:background="@drawable/selector_circle_scene_item" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_10" android:layout_toStartOf="@id/iv_order" />
+</RelativeLayout>

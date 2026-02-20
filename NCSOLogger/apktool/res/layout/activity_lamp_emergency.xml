@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?custom_attr_app_content_bg_color" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/in_el_top_title" layout="@layout/top_title_layout" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/in_el_top_title">
+        <TextView android:id="@id/tv_elName" android:layout_width="120.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginStart="10.0dip" style="@style/style_timer_title" />
+        <ImageButton android:id="@id/ib_state" android:background="@drawable/emergency_lamp_normal" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="@dimen/dp_30" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/ib_onOff" android:background="@drawable/el_click_on_off_bg" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_10" android:src="@null" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_10" android:layout_above="@id/ll_bottom_button" android:layout_below="@id/rl_state" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/dp_10">
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_elSet" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_schedule" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_elControl" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_10" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="@dimen/dp_5">
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_function" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_function_test" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_discharge" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_discharge_test" android:layout_weight="1.0" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_10" />
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_stop" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_stop_test" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:id="@id/tv_count" android:background="#ffe4e4e4" android:padding="@dimen/dp_5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_testResult" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_5" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_30" android:layout_marginEnd="@dimen/dp_30">
+        <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_set_load_value" android:background="@drawable/selector_btn_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="@dimen/dp_5" android:text="@string/emergency_set_load_value" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="@dimen/dp_5">
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_elReset" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_reset_alert" android:layout_weight="1.0" android:layout_marginEnd="@dimen/dp_5" />
+            <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_retrieve" android:background="@drawable/selector_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_retrieve" android:layout_weight="1.0" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/sp_15" android:textColor="@color/color_rb_add_lamp_selector" android:id="@id/btn_elExport" android:background="@drawable/selector_btn_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/emergency_export_report" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.litetrace.smartlight.light3.cmax" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <queries>
+        <package android:name="com.google.android.apps.photos"/>
+        <package android:name="com.sec.android.gallery3d"/>
+    </queries>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <permission android:name="com.litetrace.smartlight.light3.cmax.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.litetrace.smartlight.light3.cmax.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.litetrace.bluetooth.light.TelinkLightApplication" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="UMENG_APPKEY" android:value="59780d651061d2373e001c50"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="_cMax"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <meta-data android:name="ScopedStorage" android:value="true"/>
+        <service android:enabled="true" android:exported="false" android:name="com.litetrace.bluetooth.light.service.TelinkLightService"/>
+        <provider android:authorities="com.litetrace.smartlight.light3.cmax.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_path"/>
+        </provider>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.litetrace.bluetooth.light.activity.WelcomePageActivity" android:theme="@style/fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.LinkageSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.SceneEditActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.SensorSettingsActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.timer.TimerEditActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.litetrace.bluetooth.light.activity.MainActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.scan.DeviceScanningActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.GroupEditActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.litetrace.bluetooth.light.activity.settings.LightDimmingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.qr.QRCodeActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.qr.MipcaActivityCapture"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.EditSceneMsgActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.timer.TimerListActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.timer.TimerActionActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.timer.TimerDateActivity" android:theme="@style/date_picker_theme"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.timer.FadeinActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.IdShowActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.ExternalDeviceActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.scan.NearbyLampActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.pannel.EditSwitchActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.pannel.EditSwitch2Activity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.pannel.EditSwitchSceneOnOneFregActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.OldLinkageSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.pannel.EditTouch4SwitchSceneActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.scan.NearByDevicesCheckActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.calibrate.select.GroupCalibrateSelectActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.calibrate.setting.GroupCalibrateSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.functionTest.FunctionTestActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.MotorSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.paramsSetting.activity.ParamsSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.paramsSetting.activity.ParamsEditActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.PrivacyPolicyActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.DisableBLEActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.pannel.MTLCSensorSetActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.pannel.GJSensorSetActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.FastAddSceneActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.energyMonitor.EnergyMonitoringActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.energyMonitor.SetWorkingTimeActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.energyMonitor.ExportFileActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.energyMonitor.ClearHistoryActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.UL924SetActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.OperationChooseActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.InstructionActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.SequencesEditActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.SequencesSetTimeActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.BleWifiSetActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.HelpActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.DaylightHarvestingSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.NLCListSetActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.devices.NLCTimeZoneListActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.emergency_lamp.EmergencyLampDimmingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.emergency_lamp.EmergencyLampSettingActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.emergency_lamp.EmergencyLampControlSetActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.settings.SelectCCTActivity"/>
+        <activity android:name="com.litetrace.bluetooth.light.activity.emergency_lamp.EmergencyLampGetLogActivity"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.litetrace.smartlight.light3.cmax.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.litetrace.smartlight.light3.cmax.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

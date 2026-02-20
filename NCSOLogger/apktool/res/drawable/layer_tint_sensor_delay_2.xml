@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@mipmap/ic_sensor_delay_2" android:tint="?custom_attr_app_sensor_picker_tint_color" />
+    </item>
+</layer-list>

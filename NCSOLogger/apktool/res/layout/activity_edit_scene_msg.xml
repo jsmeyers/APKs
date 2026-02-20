@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/scene_msg_title" layout="@layout/top_title_layout" />
+    <GridView android:id="@id/edit_scene_icon" android:background="?custom_attr_app_content_bg_color" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/dp_10" android:verticalSpacing="@dimen/dp_10" android:numColumns="4" />
+</LinearLayout>

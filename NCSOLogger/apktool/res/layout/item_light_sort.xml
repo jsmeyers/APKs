@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_item_sort_rule_selector" android:gravity="center" android:id="@id/rule_name" android:background="@drawable/selector_transparent_to_white" android:paddingLeft="@dimen/dp_5" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="按名称排序" android:singleLine="true" android:drawablePadding="@dimen/dp_5" android:drawableStart="@drawable/selector_sort_reverse"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

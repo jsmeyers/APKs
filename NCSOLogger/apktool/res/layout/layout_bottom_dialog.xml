@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ll_nameList_top" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_cancel" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_marginStart="@dimen/dp_20" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_finish" android:padding="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/finish" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_codeNames" android:layout_width="fill_parent" android:layout_height="240.0dip" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_codeTypes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_codeStartTimes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_codeEndTimes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_ShowCount="5" style="@style/style_number_picker" />
+</LinearLayout>

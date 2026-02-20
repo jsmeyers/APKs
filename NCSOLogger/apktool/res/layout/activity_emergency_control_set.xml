@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/in_top" layout="@layout/top_title_layout" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/in_top">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/edit_box_bg" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/emergency_bind_power_off" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_5">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind_action" android:layout_weight="1.0" />
+                    <RadioGroup android:orientation="horizontal" android:id="@id/rg_elOperation" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" android:layout_marginEnd="@dimen/dp_10">
+                        <RadioButton android:textSize="@dimen/sp_12" android:textColor="@color/black" android:gravity="start|center" android:id="@id/rb_elLight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:text="@string/emergency_bind_lights" android:layout_weight="1.0" />
+                        <RadioButton android:textSize="@dimen/sp_12" android:textColor="@color/black" android:gravity="start|center" android:id="@id/rb_elNone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind_none" android:layout_weight="1.0" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_offNameRow" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind_set" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_elOffLightName" android:background="@drawable/shape_name_bg_pressed" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxWidth="160.0dip" android:singleLine="true" android:layout_weight="3.0" android:layout_marginEnd="@dimen/dp_10" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_offLevelRow" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="@dimen/dp_30" android:layout_marginTop="@dimen/dp_5" android:text="@string/emergency_bind_level" android:layout_weight="1.0" />
+                    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_elOffSetLightBri" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_5" android:layout_weight="2.0" app:npv_ShowCount="5" style="@style/style_number_picker" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_offRepeatRow" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="15.0dip">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="165.0dip" android:layout_height="@dimen/dp_30" android:text="@string/emergency_bind_repeat" />
+                    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_elSendIntervalOff" android:background="@color/light_white" android:layout_width="160.0dip" android:layout_height="fill_parent" android:layout_marginStart="@dimen/dp_15" app:npv_ShowCount="5" style="@style/style_number_picker" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/edit_box_bg" android:padding="@dimen/dp_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/emergency_bind_power_restore" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_5">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind_action" android:layout_weight="1.0" />
+                    <RadioGroup android:orientation="horizontal" android:id="@id/rg_elOperationResume" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" android:layout_marginEnd="@dimen/dp_10">
+                        <RadioButton android:textSize="@dimen/sp_12" android:textColor="@color/black" android:gravity="start|center" android:id="@id/rb_elLight_resume" android:layout_width="0.0dip" android:layout_height="fill_parent" android:checked="true" android:text="@string/emergency_bind_lights" android:layout_weight="1.0" />
+                        <RadioButton android:textSize="@dimen/sp_12" android:textColor="@color/black" android:gravity="start|center" android:id="@id/rb_elNone_resume" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind_none" android:layout_weight="1.0" />
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_elOnLightName" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="@dimen/dp_5">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/emergency_bind_set" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_elOnLightName" android:background="@drawable/shape_name_bg_pressed" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxWidth="160.0dip" android:singleLine="true" android:layout_weight="3.0" android:layout_marginEnd="@dimen/dp_10" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_onLevel" android:paddingTop="@dimen/dp_5" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="@dimen/dp_30" android:layout_marginTop="@dimen/dp_5" android:text="@string/emergency_bind_level" android:layout_weight="1.0" />
+                    <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/np_elOnSetLightBri" android:background="@color/light_white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_5" android:layout_weight="2.0" app:npv_ShowCount="5" style="@style/style_number_picker" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

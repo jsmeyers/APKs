@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_edit_choose_scene_btn_select_stroke_color" />
+    <solid android:color="?custom_attr_app_switch_edit_choose_scene_btn_select_bg_color" />
+</shape>

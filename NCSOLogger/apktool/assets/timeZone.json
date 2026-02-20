@@ -1,0 +1,849 @@
+[
+  {
+    "symbol" : "-",
+    "timeZone" : "12",
+    "zh" : "国际日期变更线西",
+    "minutePoint" : "0",
+    "UTC" : "UTC-12:00",
+    "en" : "International Date Line West",
+    "index" : "0"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "11",
+    "zh" : "萨摩亚群岛",
+    "minutePoint" : "0",
+    "UTC" : "UTC-11:00",
+    "en" : "Samoa",
+    "index" : "1"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "11",
+    "zh" : "协调世界时-11",
+    "minutePoint" : "0",
+    "UTC" : "UTC-11:00",
+    "en" : "Coordinated Universal Time-11",
+    "index" : "2"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "10",
+    "zh" : "夏威夷",
+    "minutePoint" : "0",
+    "UTC" : "UTC-10:00",
+    "en" : "Hawaii",
+    "index" : "3"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "9",
+    "zh" : "阿拉斯加",
+    "minutePoint" : "0",
+    "UTC" : "UTC-09:00",
+    "en" : "Alaska",
+    "index" : "4"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "8",
+    "zh" : "太平洋时间 (美国和加拿大)",
+    "minutePoint" : "0",
+    "UTC" : "UTC-08:00",
+    "en" : "Pacific Time (US , Canada)",
+    "index" : "5"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "8",
+    "zh" : "下加利福尼亚州",
+    "minutePoint" : "0",
+    "UTC" : "UTC-08:00",
+    "en" : "Baja California",
+    "index" : "6"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "7",
+    "zh" : "奇瓦瓦、拉巴斯、马萨特兰",
+    "minutePoint" : "0",
+    "UTC" : "UTC-07:00",
+    "en" : "Chihuahua,La Paz,Mazatlan",
+    "index" : "7"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "7",
+    "zh" : "山地时间 (美国和加拿大)",
+    "minutePoint" : "0",
+    "UTC" : "UTC-07:00",
+    "en" : "Mountain Time (US , Canada)",
+    "index" : "8"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "7",
+    "zh" : "亚利桑那",
+    "minutePoint" : "0",
+    "UTC" : "UTC-07:00",
+    "en" : "Arizona",
+    "index" : "9"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "6",
+    "zh" : "瓜达拉哈拉、墨西哥城、蒙特雷",
+    "minutePoint" : "0",
+    "UTC" : "UTC-06:00",
+    "en" : "Guadalajara,Mexico City,Monterrey",
+    "index" : "10"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "6",
+    "zh" : "萨斯喀彻温",
+    "minutePoint" : "0",
+    "UTC" : "UTC-06:00",
+    "en" : "Saskatchewan",
+    "index" : "11"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "6",
+    "zh" : "中部时间 (美国和加拿大)",
+    "minutePoint" : "0",
+    "UTC" : "UTC-06:00",
+    "en" : "Central Time (US , Canada)",
+    "index" : "12"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "6",
+    "zh" : "中美洲",
+    "minutePoint" : "0",
+    "UTC" : "UTC-06:00",
+    "en" : "Central America",
+    "index" : "13"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "5",
+    "zh" : "波哥大、利马、基多",
+    "minutePoint" : "0",
+    "UTC" : "UTC-05:00",
+    "en" : "Bogota,Lima,Quito",
+    "index" : "14"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "5",
+    "zh" : "东部时间 (美国和加拿大)",
+    "minutePoint" : "0",
+    "UTC" : "UTC-05:00",
+    "en" : "Eastern Time (US , Canada)",
+    "index" : "15"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "5",
+    "zh" : "印第安那州(东部)",
+    "minutePoint" : "0",
+    "UTC" : "UTC-05:00",
+    "en" : "Indiana (East)",
+    "index" : "16"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "4",
+    "zh" : "加拉加斯",
+    "minutePoint" : "50",
+    "UTC" : "UTC-04:30",
+    "en" : "Caracas",
+    "index" : "17"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "4",
+    "zh" : "大西洋时间(加拿大)",
+    "minutePoint" : "0",
+    "UTC" : "UTC-04:00",
+    "en" : "Atlantic Time (Canada)",
+    "index" : "18"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "4",
+    "zh" : "库亚巴",
+    "minutePoint" : "0",
+    "UTC" : "UTC-04:00",
+    "en" : "Cuiaba",
+    "index" : "19"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "4",
+    "zh" : "乔治敦、拉巴斯、马瑙斯、圣胡安",
+    "minutePoint" : "0",
+    "UTC" : "UTC-04:00",
+    "en" : "Georgetown,La Paz,Manaus,San Juan",
+    "index" : "20"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "4",
+    "zh" : "圣地亚哥",
+    "minutePoint" : "0",
+    "UTC" : "UTC-04:00",
+    "en" : "Santiago",
+    "index" : "21"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "4",
+    "zh" : "亚松森",
+    "minutePoint" : "0",
+    "UTC" : "UTC-04:00",
+    "en" : "Asuncion",
+    "index" : "22"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "3",
+    "zh" : "纽芬兰",
+    "minutePoint" : "50",
+    "UTC" : "UTC-03:30",
+    "en" : "Newfoundland",
+    "index" : "23"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "3",
+    "zh" : "巴西利亚",
+    "minutePoint" : "0",
+    "UTC" : "UTC-03:00",
+    "en" : "Brasilia",
+    "index" : "24"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "3",
+    "zh" : "布宜诺斯艾利斯",
+    "minutePoint" : "0",
+    "UTC" : "UTC-03:00",
+    "en" : "Buenos Aires",
+    "index" : "25"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "3",
+    "zh" : "格陵兰",
+    "minutePoint" : "0",
+    "UTC" : "UTC-03:00",
+    "en" : "Greenland",
+    "index" : "26"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "3",
+    "zh" : "卡宴、福塔雷萨",
+    "minutePoint" : "0",
+    "UTC" : "UTC-03:00",
+    "en" : "Cayenne,Fortaleza",
+    "index" : "27"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "3",
+    "zh" : "蒙得维的亚",
+    "minutePoint" : "0",
+    "UTC" : "UTC-03:00",
+    "en" : "Montevideo",
+    "index" : "28"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "2",
+    "zh" : "协调世界时-02",
+    "minutePoint" : "0",
+    "UTC" : "UTC-02:00",
+    "en" : "Coordinated Universal Time-02",
+    "index" : "29"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "2",
+    "zh" : "中大西洋",
+    "minutePoint" : "0",
+    "UTC" : "UTC-02:00",
+    "en" : "Mid-Atlantic",
+    "index" : "30"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "1",
+    "zh" : "佛得角群岛",
+    "minutePoint" : "0",
+    "UTC" : "UTC-01:00",
+    "en" : "Cape Verde Is.",
+    "index" : "31"
+  },
+  {
+    "symbol" : "-",
+    "timeZone" : "1",
+    "zh" : "亚速尔群岛",
+    "minutePoint" : "0",
+    "UTC" : "UTC-01:00",
+    "en" : "Azores",
+    "index" : "32"
+  },
+  {
+    "timeZone" : "0",
+    "zh" : "都柏林、爱丁堡、里斯本、伦敦",
+    "UTC" : "UTC",
+    "en" : "Dublin,Edinburgh,Lisbon,London",
+    "index" : "33"
+  },
+  {
+    "timeZone" : "0",
+    "zh" : "卡萨布兰卡",
+    "UTC" : "UTC",
+    "en" : "Casablanca",
+    "index" : "34"
+  },
+  {
+    "timeZone" : "0",
+    "zh" : "蒙罗维亚、雷克雅未克",
+    "UTC" : "UTC",
+    "en" : "Monrovia,Reykjavik",
+    "index" : "35"
+  },
+  {
+    "timeZone" : "0",
+    "zh" : "协调世界时",
+    "UTC" : "UTC",
+    "en" : "Coordinated Universal Time",
+    "index" : "36"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "1",
+    "zh" : "阿姆斯特丹、柏林、伯尔尼、罗马、斯德哥尔摩、维也纳",
+    "minutePoint" : "0",
+    "UTC" : "UTC+01:00",
+    "en" : "Amsterdam,Berlin,Bern,Rome,Stockholm,Vienna ",
+    "index" : "37"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "1",
+    "zh" : "贝尔格莱德、布拉迪斯拉发、布达佩斯、卢布尔雅那、布拉格",
+    "minutePoint" : "0",
+    "UTC" : "UTC+01:00",
+    "en" : "Belgrade,Bratislava,Budapest,Ljubljana,Prague ",
+    "index" : "38"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "1",
+    "zh" : "布鲁塞尔、哥本哈根、马德里、巴黎",
+    "minutePoint" : "0",
+    "UTC" : "UTC+01:00",
+    "en" : "Brussels,Copenhagen,Madrid,Paris",
+    "index" : "39"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "1",
+    "zh" : "萨拉热窝、斯科普里、华沙、萨格勒布",
+    "minutePoint" : "0",
+    "UTC" : "UTC+01:00",
+    "en" : "Sarajevo,Skopje,Warsaw,Zagreb",
+    "index" : "40"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "1",
+    "zh" : "中非西部",
+    "minutePoint" : "0",
+    "UTC" : "UTC+01:00",
+    "en" : "West Central Africa",
+    "index" : "41"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "安曼",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Amman",
+    "index" : "42"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "贝鲁特",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Beirut",
+    "index" : "43"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "大马士革",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Damascus",
+    "index" : "44"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "哈拉雷、比勒陀利亚",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Harare,Pretoria",
+    "index" : "45"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "赫尔辛基、基辅、里加、索非亚、塔林、维尔纽斯",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Helsinki,Kyiv,Riga,Sofia,Talinn,Vilnius",
+    "index" : "46"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "开罗",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Cairo",
+    "index" : "47"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "明斯克",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Minsk",
+    "index" : "48"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "雅典、布加勒斯特、伊斯坦布尔",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Athens,Bucharest,Istanbul",
+    "index" : "49"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "2",
+    "zh" : "耶路撒冷",
+    "minutePoint" : "0",
+    "UTC" : "UTC+02:00",
+    "en" : "Jerusalem",
+    "index" : "50"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "3",
+    "zh" : "巴格达",
+    "minutePoint" : "0",
+    "UTC" : "UTC+03:00",
+    "en" : "Baghdad",
+    "index" : "51"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "3",
+    "zh" : "科威特、利雅得",
+    "minutePoint" : "0",
+    "UTC" : "UTC+03:00",
+    "en" : "Kuwait,Riyadh",
+    "index" : "52"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "3",
+    "zh" : "莫斯科、圣彼得堡、伏尔加格勒",
+    "minutePoint" : "0",
+    "UTC" : "UTC+03:00",
+    "en" : "Moscow,St.Petersburg,Volgograd",
+    "index" : "53"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "3",
+    "zh" : "内罗毕",
+    "minutePoint" : "0",
+    "UTC" : "UTC+03:00",
+    "en" : "Nairobi",
+    "index" : "54"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "3",
+    "zh" : "德黑兰",
+    "minutePoint" : "50",
+    "UTC" : "UTC+03:30",
+    "en" : "Tehran",
+    "index" : "55"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "4",
+    "zh" : "阿布扎比、马斯喀特",
+    "minutePoint" : "0",
+    "UTC" : "UTC+04:00",
+    "en" : "Abu Dhabi,Muscat",
+    "index" : "56"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "4",
+    "zh" : "埃里温",
+    "minutePoint" : "0",
+    "UTC" : "UTC+04:00",
+    "en" : "Yerevan",
+    "index" : "57"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "4",
+    "zh" : "巴库",
+    "minutePoint" : "0",
+    "UTC" : "UTC+04:00",
+    "en" : "Baku",
+    "index" : "58"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "4",
+    "zh" : "第比利斯",
+    "minutePoint" : "0",
+    "UTC" : "UTC+04:00",
+    "en" : "Tbilisi",
+    "index" : "59"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "4",
+    "zh" : "路易港",
+    "minutePoint" : "0",
+    "UTC" : "UTC+04:00",
+    "en" : "Port Louis",
+    "index" : "60"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "4",
+    "zh" : "喀布尔",
+    "minutePoint" : "50",
+    "UTC" : "UTC+04:30",
+    "en" : "Kabul",
+    "index" : "61"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "5",
+    "zh" : "塔什干",
+    "minutePoint" : "0",
+    "UTC" : "UTC+05:00",
+    "en" : "Tashkent",
+    "index" : "62"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "5",
+    "zh" : "叶卡捷琳堡",
+    "minutePoint" : "0",
+    "UTC" : "UTC+05:00",
+    "en" : "Ekaterinburg",
+    "index" : "63"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "5",
+    "zh" : "伊斯兰堡、卡拉奇",
+    "minutePoint" : "0",
+    "UTC" : "UTC+05:00",
+    "en" : "Islamabad,Karachi",
+    "index" : "64"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "5",
+    "zh" : "钦奈、加尔各答、孟买、新德里",
+    "minutePoint" : "50",
+    "UTC" : "UTC+05:30",
+    "en" : "Chennai,Kolkata,Mumbai,New Delhi",
+    "index" : "65"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "5",
+    "zh" : "斯里加亚渥登普拉",
+    "minutePoint" : "50",
+    "UTC" : "UTC+05:30",
+    "en" : "Sri Jayawardenepura",
+    "index" : "66"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "5",
+    "zh" : "加德满都",
+    "minutePoint" : "75",
+    "UTC" : "UTC+05:45",
+    "en" : "Kathmandu",
+    "index" : "67"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "6",
+    "zh" : "阿斯塔纳",
+    "minutePoint" : "0",
+    "UTC" : "UTC+06:00",
+    "en" : "Astana",
+    "index" : "68"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "6",
+    "zh" : "达卡",
+    "minutePoint" : "0",
+    "UTC" : "UTC+06:00",
+    "en" : "Dhaka",
+    "index" : "69"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "6",
+    "zh" : "新西伯利亚",
+    "minutePoint" : "0",
+    "UTC" : "UTC+06:00",
+    "en" : "Novosibirsk",
+    "index" : "70"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "6",
+    "zh" : "仰光",
+    "minutePoint" : "50",
+    "UTC" : "UTC+06:30",
+    "en" : "Yangon (Rangoon)",
+    "index" : "71"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "7",
+    "zh" : "克拉斯诺亚尔斯克",
+    "minutePoint" : "0",
+    "UTC" : "UTC+07:00",
+    "en" : "Krasnoyarsk",
+    "index" : "72"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "7",
+    "zh" : "曼谷、河内、雅加达",
+    "minutePoint" : "0",
+    "UTC" : "UTC+07:00",
+    "en" : "Bangkok,Hanoi,Jakarta",
+    "index" : "73"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "8",
+    "zh" : "北京、重庆、香港特别行政区、乌鲁木齐",
+    "minutePoint" : "0",
+    "UTC" : "UTC+08:00",
+    "en" : "Beijing,Chongqing,Hong Kong,Urumqi ",
+    "index" : "74"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "8",
+    "zh" : "吉隆坡、新加坡",
+    "minutePoint" : "0",
+    "UTC" : "UTC+08:00",
+    "en" : "Kuala Lumpur,Singapore",
+    "index" : "75"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "8",
+    "zh" : "珀斯",
+    "minutePoint" : "0",
+    "UTC" : "UTC+08:00",
+    "en" : "Perth",
+    "index" : "76"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "8",
+    "zh" : "台北",
+    "minutePoint" : "0",
+    "UTC" : "UTC+08:00",
+    "en" : "Taipei",
+    "index" : "77"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "8",
+    "zh" : "乌兰巴托",
+    "minutePoint" : "0",
+    "UTC" : "UTC+08:00",
+    "en" : "Ulaanbaatar",
+    "index" : "78"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "8",
+    "zh" : "伊尔库茨克",
+    "minutePoint" : "0",
+    "UTC" : "UTC+08:00",
+    "en" : "Irkutsk",
+    "index" : "79"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "9",
+    "zh" : "大阪、札幌、东京",
+    "minutePoint" : "0",
+    "UTC" : "UTC+09:00",
+    "en" : "Osaka,Sapporo,Tokyo",
+    "index" : "80"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "9",
+    "zh" : "首尔",
+    "minutePoint" : "0",
+    "UTC" : "UTC+09:00",
+    "en" : "Seoul",
+    "index" : "81"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "9",
+    "zh" : "阿德莱德",
+    "minutePoint" : "50",
+    "UTC" : "UTC+09:30",
+    "en" : "Adelaide",
+    "index" : "82"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "9",
+    "zh" : "达尔文",
+    "minutePoint" : "50",
+    "UTC" : "UTC+09:30",
+    "en" : "Darwin",
+    "index" : "83"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "10",
+    "zh" : "布里斯班",
+    "minutePoint" : "0",
+    "UTC" : "UTC+10:00",
+    "en" : "Brisbane",
+    "index" : "84"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "10",
+    "zh" : "符拉迪沃斯托克",
+    "minutePoint" : "0",
+    "UTC" : "UTC+10:00",
+    "en" : "Vladivostok",
+    "index" : "85"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "10",
+    "zh" : "关岛、莫尔兹比港",
+    "minutePoint" : "0",
+    "UTC" : "UTC+10:00",
+    "en" : "Guam,Port Moresby",
+    "index" : "86"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "10",
+    "zh" : "霍巴特",
+    "minutePoint" : "0",
+    "UTC" : "UTC+10:00",
+    "en" : "Hobart",
+    "index" : "87"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "10",
+    "zh" : "堪培拉、墨尔本、悉尼",
+    "minutePoint" : "0",
+    "UTC" : "UTC+10:00",
+    "en" : "Canberra,Melbourne,Sydney ",
+    "index" : "88"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "11",
+    "zh" : "马加丹",
+    "minutePoint" : "0",
+    "UTC" : "UTC+11:00",
+    "en" : "Magadan",
+    "index" : "89"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "11",
+    "zh" : "所罗门群岛、新喀里多尼亚",
+    "minutePoint" : "0",
+    "UTC" : "UTC+11:00",
+    "en" : "Solomon Is.,New Caledonia ",
+    "index" : "90"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "12",
+    "zh" : "奥克兰、惠灵顿",
+    "minutePoint" : "0",
+    "UTC" : "UTC+12:00",
+    "en" : "Auckland,Wellington",
+    "index" : "91"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "12",
+    "zh" : "斐济",
+    "minutePoint" : "0",
+    "UTC" : "UTC+12:00",
+    "en" : "Fiji",
+    "index" : "92"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "12",
+    "zh" : "协调世界时+12",
+    "minutePoint" : "0",
+    "UTC" : "UTC+12:00",
+    "en" : "Coordinated Universal Time+12 ",
+    "index" : "93"
+  },
+  {
+    "symbol" : "+",
+    "timeZone" : "13",
+    "zh" : "努库阿洛法",
+    "minutePoint" : "0",
+    "UTC" : "UTC+13:00",
+    "en" : "Nuku'alofa",
+    "index" : "94"
+  }
+]

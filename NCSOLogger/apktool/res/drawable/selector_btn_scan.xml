@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="?custom_attr_app_qrcode_scan_select_bg_color" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_qrcode_scan_stroke_color" />
+            <solid android:color="?custom_attr_app_qrcode_scan_bg_color" />
+        </shape>
+    </item>
+</selector>

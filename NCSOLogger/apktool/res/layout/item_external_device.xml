@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/line_has_device" android:padding="@dimen/padding_normal" android:layout_width="fill_parent" android:layout_height="185.0dip">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="?custom_attr_app_485device_text_color" android:gravity="bottom|center" android:id="@id/check_device" android:background="@drawable/selector_device_485" android:padding="10.0dip" android:layout_width="145.0dip" android:layout_height="102.0dip" android:button="@null" />
+        <ImageView android:id="@id/device_select" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_check_button_circle" android:layout_below="@id/check_device" android:layout_alignEnd="@id/check_device" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_no_device_text_color" android:gravity="center" android:id="@id/tv_device_name" android:layout_width="88.0dip" android:layout_height="wrap_content" android:layout_below="@id/check_device" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

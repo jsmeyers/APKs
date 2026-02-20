@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_bg_loading" android:paddingTop="@dimen/dp_16" android:paddingBottom="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="48.0dip" android:paddingEnd="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:srcCompat="@mipmap/ic_loading" app:tint="?progress_loading_image_color" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:id="@id/tv_message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="加载中" />
+</LinearLayout>

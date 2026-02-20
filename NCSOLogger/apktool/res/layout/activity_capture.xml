@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.bingoogolapple.qrcode.zxing.ZXingView android:id="@id/zxingview" android:layout_width="fill_parent" android:layout_height="fill_parent" app:qrcv_animTime="1000" app:qrcv_borderColor="@android:color/transparent" app:qrcv_borderSize="1.0dip" app:qrcv_cornerColor="?custom_attr_app_qrcode_scan_box_image_tint_color" app:qrcv_cornerLength="20.0dip" app:qrcv_cornerSize="3.0dip" app:qrcv_isOnlyDecodeScanBoxArea="false" app:qrcv_isScanLineReverse="true" app:qrcv_isShowTipBackground="true" app:qrcv_isShowTipTextAsSingleLine="true" app:qrcv_maskColor="#aa000000" app:qrcv_qrCodeTipText="@string/scan_text" app:qrcv_rectWidth="200.0dip" app:qrcv_tipTextSize="@dimen/sp_16" app:qrcv_topOffset="170.0dip" />
+    <include layout="@layout/top_title_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:layout_alignParentBottom="true" android:paddingStart="@dimen/dp_56" android:paddingEnd="@dimen/dp_56">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/line_open_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qr_picture_selector" />
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/open_picture" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/line_open_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qr_flash_selector" />
+            <TextView android:textSize="@dimen/sp_15" android:textColor="@color/white" android:id="@id/tv_open_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/open_flash" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

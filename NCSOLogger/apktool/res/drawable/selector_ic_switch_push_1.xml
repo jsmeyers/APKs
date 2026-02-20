@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topRightRadius="@dimen/dp_10" android:bottomRightRadius="@dimen/dp_10" />
+                    <solid android:color="?custom_attr_app_switch_comment_btn_hightlight_bg_color" />
+                    <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_comment_btn_stroke_color" />
+                </shape>
+            </item>
+            <item android:gravity="bottom" android:left="0.0dip" android:top="210.0dip" android:right="0.0dip" android:bottom="0.0dip">
+                <shape>
+                    <corners android:bottomRightRadius="@dimen/dp_10" />
+                    <solid android:color="?custom_attr_app_switch_3key_bottom_area_color" />
+                    <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_comment_btn_stroke_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <corners android:topRightRadius="@dimen/dp_10" android:bottomRightRadius="@dimen/dp_10" />
+                    <solid android:color="?custom_attr_app_switch_comment_btn_bg_color" />
+                    <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_comment_btn_stroke_color" />
+                </shape>
+            </item>
+            <item android:gravity="bottom" android:left="0.0dip" android:top="210.0dip" android:right="0.0dip" android:bottom="0.0dip">
+                <shape>
+                    <corners android:bottomRightRadius="@dimen/dp_10" />
+                    <solid android:color="?custom_attr_app_switch_3key_bottom_area_color" />
+                    <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_comment_btn_stroke_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

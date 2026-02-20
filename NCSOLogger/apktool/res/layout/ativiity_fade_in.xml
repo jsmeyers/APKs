@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_title_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="?custom_attr_app_timer_date_picker_bg_color" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24">
+        <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/picker_hour" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:npv_HintText="@string/min" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_TextArray="@array/minute_display" app:npv_WrapSelectorWheel="true" style="@style/style_number_picker" />
+        <com.litetrace.bluetooth.light.widget.NumberPickerView android:id="@id/picker_minute" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:npv_HintText="@string/second" app:npv_ItemPaddingHorizontal="5.0dip" app:npv_ItemPaddingVertical="7.0dip" app:npv_TextArray="@array/minute_display" app:npv_WrapSelectorWheel="true" style="@style/style_number_picker" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/top_title_layout" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/line_switch" android:background="?custom_attr_app_switch_edit_scene_select_top_area_color" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/line_scenes" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:orientation="horizontal" android:background="?custom_attr_app_switch_edit_scene_select_bottom_area_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_saveSwitch" android:text="@string/save" android:layout_centerInParent="true" style="@style/style_btn_save" />
+    </RelativeLayout>
+</LinearLayout>

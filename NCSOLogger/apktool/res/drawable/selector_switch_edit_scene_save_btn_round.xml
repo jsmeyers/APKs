@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0dip" android:color="?custom_attr_app_switch_edit_choose_savebtn_press_stroke_color" />
+            <solid android:color="?custom_attr_app_switch_edit_choose_savebtn_press_bg_color" />
+            <corners android:radius="@dimen/dp_24" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1.0dip" android:color="?custom_attr_app_switch_edit_choose_savebtn_stroke_color" />
+            <solid android:color="?custom_attr_app_switch_edit_choose_savebtn_bg_color" />
+            <corners android:radius="@dimen/dp_24" />
+        </shape>
+    </item>
+</selector>

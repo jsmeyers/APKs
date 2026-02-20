@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape android:shape="rectangle">
+            <solid android:color="?custom_attr_app_switch_5key_horizontal_bg_color" />
+            <stroke android:width="@dimen/dp_1" android:color="?custom_attr_app_switch_5key_horizontal_stroke_color" />
+            <corners android:radius="@dimen/dp_5" />
+            <size android:height="@dimen/dp_100" />
+        </shape>
+    </item>
+    <item android:gravity="center_horizontal" android:left="@dimen/dp_6" android:top="@dimen/dp_6" android:right="@dimen/dp_6" android:bottom="120.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="?custom_attr_app_switch_5key_horizontal_area_color" />
+        </shape>
+    </item>
+</layer-list>

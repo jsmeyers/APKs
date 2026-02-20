@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?custom_attr_app_content_bg_color" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/light_name" android:layout_marginTop="@dimen/dp_10" style="@style/style_timer_title" />
+        <TextView android:id="@id/light_ratedPower" android:layout_width="80.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" style="@style/style_timer_title" />
+    </RelativeLayout>
+    <com.litetrace.bluetooth.light.widget.CircleView android:layout_gravity="end" android:id="@id/light_selected_color" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_below="@id/rl_top" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_dimming_preview_tips_text_color" android:gravity="center" android:id="@id/single_light_bri" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/light_selected_color" android:layout_alignStart="@id/light_selected_color" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_46" android:layout_centerInParent="true">
+        <ImageView android:id="@id/light_type_iv_bottom" android:background="@drawable/layer_light_dimming_bg" android:layout_width="230.0dip" android:layout_height="230.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/light_type_iv_front" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@mipmap/ic_light_center_open" android:scaleType="fitCenter" android:layout_centerInParent="true" app:tint="?custom_attr_dim_openswitch_tint_color" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true">
+        <include layout="@layout/dimming_view_sensor_btns_layout" />
+    </LinearLayout>
+</RelativeLayout>

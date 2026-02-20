@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape android:shape="oval">
+            <solid android:color="?custom_attr_dim_bg_stroke_color" />
+            <stroke android:width="@dimen/dp_0.5" android:color="?custom_attr_dim_bg_deliver_color" />
+        </shape>
+    </item>
+    <item android:left="@dimen/dp_15" android:top="@dimen/dp_15" android:right="@dimen/dp_15" android:bottom="@dimen/dp_15">
+        <shape android:shape="oval">
+            <solid android:color="?custom_attr_dim_bg_solid_color" />
+        </shape>
+    </item>
+</layer-list>

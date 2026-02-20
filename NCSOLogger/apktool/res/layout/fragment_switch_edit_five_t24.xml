@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_switch" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/layer_switch_horizontal_5key_bg" android:layout_width="300.0dip" android:layout_height="225.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="115.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/line_five_key_1" android:background="@drawable/selector_ic_switch_five_bg_key" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/btnSwitchScene1" android:drawableBottom="@drawable/selector_ic_switch_on" style="@style/style_tv_panel_five_key" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/line_five_key_2" android:background="@drawable/selector_ic_switch_five_bg_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6">
+                    <TextView android:id="@id/btnSwitchScene2" android:drawableBottom="@drawable/selector_ic_switch_off" style="@style/style_tv_panel_five_key" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/line_five_key_5" android:background="@drawable/selector_ic_switch_five_bg_key_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="7.0dip" android:layout_marginEnd="7.0dip">
+                <TextView android:id="@id/btnSwitchScene5" android:drawableBottom="@drawable/selector_ic_switch_auto" style="@style/style_tv_panel_five_key" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/line_five_key_3" android:background="@drawable/selector_ic_switch_edit_five_bg_key" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/btnSwitchScene3" style="@style/style_tv_panel_five_key_scene" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/line_five_key_4" android:background="@drawable/selector_ic_switch_edit_five_bg_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6">
+                    <TextView android:id="@id/btnSwitchScene4" style="@style/style_tv_panel_five_key_scene" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/dp_0.5" android:color="?custom_attr_app_timer_edit_action_scene_normal_stroke_color" />
+    <solid android:color="?custom_attr_app_timer_edit_action_scene_normal_bg_color" />
+    <corners android:radius="@dimen/dp_6" />
+</shape>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_title_layout" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/sw_name" android:layout_marginTop="@dimen/dp_10" style="@style/style_timer_title" />
+        <TextView android:id="@id/sw_ratedPower" android:layout_width="80.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" style="@style/style_timer_title" />
+    </RelativeLayout>
+    <RelativeLayout android:background="?custom_attr_app_dimming_type_bar_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.litetrace.bluetooth.light.widget.CircleView android:id="@id/sw_selected_color" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true" app:roundColor="@color/black" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_dimming_preview_tips_text_color" android:gravity="center" android:id="@id/sw_bri" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/sw_selected_color" android:layout_alignStart="@id/sw_selected_color" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/sw_type_iv_bottom" android:background="@drawable/layer_light_dimming_bg" android:layout_width="230.0dip" android:layout_height="230.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/sw_type_iv_single_dimming" android:layout_width="200.0dip" android:layout_height="160.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/icon_light_single_dimming" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+            <com.litetrace.bluetooth.light.widget.SeekArc android:id="@id/sw_seekArc" android:padding="25.0dip" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" app:arcWidth="1.0dip" app:progressWidth="1.0dip" app:rotation="180" app:startAngle="55" app:sweepAngle="250" app:thumb="@mipmap/scrubber_color" app:touchInside="true" />
+            <ImageView android:id="@id/sw_type_iv_front" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@mipmap/ic_light_center_open" android:scaleType="fitCenter" android:layout_centerInParent="true" app:tint="?custom_attr_dim_openswitch_tint_color" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_20" android:layout_alignParentEnd="true">
+            <ImageButton android:id="@id/btn_sw_auto" android:background="@drawable/selector_theme_button_bg_circle" android:padding="@dimen/dp_5" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_dimming_auto" android:scaleType="fitCenter" app:tint="?custom_attr_app_dimming_bottom_btn_tint_color" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

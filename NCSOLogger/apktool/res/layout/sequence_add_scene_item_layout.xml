@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/rl_seq_item" android:background="?custom_attr_app_scene_grid_normal_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_seq" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/dp_5" android:src="@drawable/icon_scene_all_on_normal" android:layout_centerHorizontal="true" app:tint="@color/selector_scene_top_button_tint" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/selector_scene_btn_text_color" android:id="@id/tv_seq_name" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" android:text="@string/scene_str_all_on" android:singleLine="true" android:layout_below="@id/iv_seq" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_seq_delete" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

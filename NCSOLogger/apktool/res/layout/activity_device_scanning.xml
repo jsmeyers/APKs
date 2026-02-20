@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?custom_attr_app_content_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/top_title_layout" />
+    <TextView android:textSize="@dimen/sp_15" android:textColor="@color/black" android:padding="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="85.0dip" android:text="@string/add_switch_tips" />
+    <RelativeLayout android:id="@id/scan_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+        <ImageView android:id="@id/iv_scan_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/infoOperating" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <TextView android:id="@id/device_scan_light" android:visibility="gone" android:text="@string/scan_light_count" android:layout_below="@id/infoOperating" style="@style/style_tv_scan" />
+        <TextView android:id="@id/device_scan_swith" android:layout_marginTop="40.0dip" android:text="@string/scan_switch_count" android:layout_below="@id/device_scan_light" style="@style/style_tv_scan" />
+        <TextView android:id="@id/device_scan_device" android:visibility="gone" android:text="@string/scan_device_count" android:layout_below="@id/device_scan_swith" style="@style/style_tv_scan" />
+    </RelativeLayout>
+</LinearLayout>

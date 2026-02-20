@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:scaleType="fitCenter" android:height="20.0dip" android:width="28.299988dip" android:drawable="@drawable/selector_ic_switch_mobile_bri_up" />
+</layer-list>

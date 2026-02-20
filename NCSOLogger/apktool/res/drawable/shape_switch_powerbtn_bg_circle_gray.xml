@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="52.5dip" />
+    <stroke android:width="@dimen/dp_2" android:color="?custom_attr_app_switch_comment_btn_selected_stroke_color" />
+    <solid android:color="?custom_attr_app_switch_seton_btn_hightlight_bg_color" />
+</shape>

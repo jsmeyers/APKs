@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/gray_bg" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_5" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="?custom_attr_app_nearlamp_title_color" android:id="@id/tv_QRCodeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的灯具" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_nearlamp_text_color" android:id="@id/tv_meshName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GJadfsfasfasfs" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/sp_14" android:textColor="?custom_attr_app_nearlamp_connect_btn_text_color" android:id="@id/btn_connect_mesh" android:background="@drawable/shape_name_bg_pressed" android:paddingLeft="@dimen/dp_3" android:paddingRight="@dimen/dp_3" android:layout_width="wrap_content" android:layout_height="@dimen/dp_30" android:text="连接" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_20" android:layout_alignParentEnd="true" />
+</RelativeLayout>
