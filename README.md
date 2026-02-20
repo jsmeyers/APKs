@@ -33,8 +33,22 @@ John
   - External services: Google Firebase
   - Hardcoded secrets: None
   - ARM64 native libs: Present
-  - OAuth2 client: AppAuth (`io.appauth`)
-  - QR scanner: FlutterQR
+
+### Mark43_OnScene_2024.06.0
+- **Date:** 2026-02-20
+- **File:** `Mark43_OnScene_2024.06.0-39.1_APKPure.apk` (119 MB)
+- **Report:** [Mark43_OnScene_2024.06.0/report.md](Mark43_OnScene_2024.06.0/report.md)
+- **Tech Stack:**
+  - Mark43 OnScene (public safety dispatch)
+  - Firebase (Analytics, Installations)
+  - Pendo (Product analytics: US/EU/JPN endpoints)
+  - YouTube integration
+  - OkHttp, RxJava, Media3
+- **Findings:**
+  - Decompilation: Success
+  - External services: Firebase, Pendo Analytics
+  - Hardcoded secrets: None
+  - Analytics tracking active
 
 ---
 
