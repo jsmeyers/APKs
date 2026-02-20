@@ -99,7 +99,9 @@
 
 ** QR Code Features:**
 - **Purpose:** Device pairing and mesh configuration
-- **Data:** `MeshQRCode` structure (meshName, pinData, pinName, lights, devices)
+- **Data:** `MeshQRCode` structure serialized via Gson
+  - Fields: `index`, `meshName`, `pinData`, `pinName`, `lights`, `devices`, `highPermission`
+  - `highPermission` encodes permission level: `0` (standard user) vs `1` (administrator)
 - **UI:** App title "My Zones", "Administrator QR code" text block
 - **Visual:** Large black-and-white QR with orange centered logo containing QR icon + hand icon
 
