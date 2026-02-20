@@ -22,11 +22,19 @@ John
 - **Date:** 2026-02-20
 - **File:** `Cyolo_Connect_1.3.0.xapk` (55 MB)
 - **Report:** [Cyolo_Connect_1.3.0/report.md](Cyolo_Connect_1.3.0/report.md)
+- **Tech Stack:**
+  - Flutter (dart:io, flutter_native_splash)
+  - AppAuth (OAuth2)
+  - OkHttp3 (HTTP client)
+  - kotlinx.coroutines
+  - QR scanning (flutterqr)
 - **Findings:**
-  - Decompile: Success
+  - Decompilation: Success
   - External services: Google Firebase
-  - Secrets found: None
+  - Hardcoded secrets: None
   - ARM64 native libs: Present
+  - OAuth2 client: AppAuth (`io.appauth`)
+  - QR scanner: FlutterQR
 
 ---
 
