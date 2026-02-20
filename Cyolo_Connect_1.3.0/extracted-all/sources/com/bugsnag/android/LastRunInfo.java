@@ -1,0 +1,32 @@
+package com.bugsnag.android;
+
+/* JADX INFO: compiled from: LastRunInfo.kt */
+/* JADX INFO: loaded from: classes.dex */
+@kotlin.Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0002\u0010\u0007J\b\u0010\r\u001a\u00020\u000eH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u000b¨\u0006\u000f"}, d2 = {"Lcom/bugsnag/android/LastRunInfo;", "", "consecutiveLaunchCrashes", "", "crashed", "", "crashedDuringLaunch", "(IZZ)V", "getConsecutiveLaunchCrashes", "()I", "getCrashed", "()Z", "getCrashedDuringLaunch", "toString", "", "bugsnag-android-core_release"}, k = 1, mv = {1, 5, 1}, xi = 48)
+public final class LastRunInfo {
+    private final int consecutiveLaunchCrashes;
+    private final boolean crashed;
+    private final boolean crashedDuringLaunch;
+
+    public LastRunInfo(int i, boolean z, boolean z2) {
+        this.consecutiveLaunchCrashes = i;
+        this.crashed = z;
+        this.crashedDuringLaunch = z2;
+    }
+
+    public final int getConsecutiveLaunchCrashes() {
+        return this.consecutiveLaunchCrashes;
+    }
+
+    public final boolean getCrashed() {
+        return this.crashed;
+    }
+
+    public final boolean getCrashedDuringLaunch() {
+        return this.crashedDuringLaunch;
+    }
+
+    public String toString() {
+        return "LastRunInfo(consecutiveLaunchCrashes=" + this.consecutiveLaunchCrashes + ", crashed=" + this.crashed + ", crashedDuringLaunch=" + this.crashedDuringLaunch + ')';
+    }
+}

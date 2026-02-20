@@ -1,0 +1,7 @@
+package com.google.common.base;
+
+/* JADX INFO: loaded from: classes.dex */
+abstract class ExtraObjectsMethodsForWeb {
+    ExtraObjectsMethodsForWeb() {
+    }
+}

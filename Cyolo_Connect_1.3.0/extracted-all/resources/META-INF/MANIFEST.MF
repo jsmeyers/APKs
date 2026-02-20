@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA1-Digest: kxE9tjmx3FP7mZN+kunDScIo8mk=
+
+Name: lib/arm64-v8a/libapp.so
+SHA1-Digest: 0eFALQzwFPfIR6G3zyMpvMpP82U=
+
+Name: lib/arm64-v8a/libbridge.so
+SHA1-Digest: LJ9Ajxsu5dVfcOM+JqbzUk7PhdM=
+
+Name: lib/arm64-v8a/libbugsnag-ndk.so
+SHA1-Digest: AN+IUqsAMSZrfNb/XrezSS1S3xE=
+
+Name: lib/arm64-v8a/libbugsnag-plugin-android-anr.so
+SHA1-Digest: HD1GVAgIs3s08654QJpaQb5qT7k=
+
+Name: lib/arm64-v8a/libbugsnag-root-detection.so
+SHA1-Digest: sTwZ1Zs4FPyTZuaqQHsKTHOVaQ0=
+
+Name: lib/arm64-v8a/libcyolo.so
+SHA1-Digest: LwF0jkbh0qAWC3y0qkLe1BX1axk=
+
+Name: lib/arm64-v8a/libflutter.so
+SHA1-Digest: hRTYT4IvHMy2QVJXLqzSfSnTBIc=
+
+Name: lib/arm64-v8a/libtoolChecker.so
+SHA1-Digest: Ehak0KZlhk6vbhGVyWRnlh2/RrI=
+
+Name: stamp-cert-sha256
+SHA1-Digest: 5vTkm69vqAbusD/fho7oWwc7j+I=
+
