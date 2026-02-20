@@ -33,11 +33,15 @@
 - Required config: API Key, App ID, Project ID
 - Deprecation warnings: KTX migration required
 
+### Bugsnag (Crash Reporting)
+- `https://notify.bugsnag.com`
+- `https://sessions.bugsnag.com`
+
 ---
 
 ## API Endpoints
 
-No custom backend endpoints found in binary or manifest.
+No custom backend endpoints found. App is Flutter-based with local method channels (`io.flutter.plugin.common.MethodChannel`) — all communication is local to the app.
 
 ---
 
@@ -50,6 +54,15 @@ No custom backend endpoints found in binary or manifest.
 | WebView JS interface usage | Scanned | — |
 | Certificate validation bypass | Scanned | — |
 | Native code (ARM64) | `config.arm64_v8a.apk` | Normal |
+
+---
+
+## Tech Stack
+
+- Flutter (Dart)
+- Firebase (Analytics, Installations)
+- Bugsnag (Crash reporting)
+- OkHttp (HTTP client)
 
 ---
 
