@@ -41,6 +41,27 @@
 
 ---
 
+## Mark43 RMS API Endpoints
+
+| Endpoint | Purpose | Note |
+|----------|---------|------|
+| `/rms/auth/sso/v2/logout/url` | SSO logout | Static string |
+| `/rms/auth/ping` | Health check | OkHttp |
+| `/rms/auth/modules` | Module listing | OkHttp |
+| `/rms/auth/login/refresh/v2` | Login refresh | OkHttp |
+| `/rms/vehicles/codes/makes` | Vehicle makes | OkHttp |
+| `/rms/vehicles/codes/models` | Vehicle models | OkHttp |
+| `/rms/master/locations/countries` | Countries list | `?size=1000` param |
+| `/rms/user/current/profile` | User profile | Source: `COBALT_CAD` |
+| `/rms/attributes/types` | Attribute types | OkHttp |
+| `/rms/person/hydrated` | Person data | OkHttp |
+
+**`baseUrl` injection:** Configured at runtime via Dagger DI (`DexApi` module). Not hardcoded in binary — requires proxy analysis or runtime hook to extract actual domain.
+
+**Tech stack:** OkHttp HTTP client, RxJava/Retrofit for API calls.
+
+---
+
 ## Suspicious Patterns
 
 | Pattern | Location | Status |
@@ -68,8 +89,9 @@
 
 1. **Pendo API Key** — Verify not exposed in client config
 2. **Network Security Config** — Check for cleartext HTTP allowed
-3. **Permissions** — Review `AndroidManifest.xml` for over-permissive declarations
-4. **Proguard/R8** — Build appears obfuscated — ensure sensitive logic is protected
+3. **Mark43 RMS baseUrl** — Extract at runtime via proxy (Charles, Burp, or OkHttp interceptor) to identify backend domain
+4. **Permissions** — Review `AndroidManifest.xml` for over-permissive declarations
+5. **Proguard/R8** — Build appears obfuscated — ensure sensitive logic is protected
 
 ---
 
